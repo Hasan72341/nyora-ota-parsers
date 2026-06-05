@@ -54,10 +54,36 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - name: Resolve OTA Version
+        id: ota_version
+        env:
+          NYORA_OTA_MANIFEST: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/manifest.json
+        run: |
+          node <<'NODE' >> "$GITHUB_OUTPUT"
+          const { readFileSync, existsSync } = await import('node:fs');
+          const manifestUrl = process.env.NYORA_OTA_MANIFEST;
+          let current = 0;
+          try {
+            const response = await fetch(manifestUrl);
+            if (response.ok) {
+              const manifest = await response.json();
+              current = Number.parseInt(manifest.version, 10) || 0;
+            }
+          } catch {
+            current = 0;
+          }
+          let baseline = 0;
+          if (existsSync('VERSION')) {
+            baseline = Number.parseInt(readFileSync('VERSION', 'utf8').trim(), 10) || 0;
+          }
+          console.log(`version=${Math.max(current, baseline) + 1}`);
+          NODE
+
       - name: Compile Parser Bundle
         env:
           # Injects the target hosting URL into manifest.json
           NYORA_OTA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          NYORA_OTA_VERSION: ${{ steps.ota_version.outputs.version }}
         run: npm run build
 
       - name: Setup Pages

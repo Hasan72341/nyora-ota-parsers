@@ -24,11 +24,12 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const REPO = join(ROOT, '..');
 const SRC = join(ROOT, 'src');
 const DIST = join(ROOT, 'dist');
+const VERSION_FILE = join(ROOT, 'VERSION');
 
 // Where the OTA artifacts are published. Point this at your GitHub-raw dist path.
 // Apps fetch `${OTA_BASE}/manifest.json` and download bundle/sources from these URLs.
 const OTA_BASE = process.env.NYORA_OTA_BASE
-  || 'https://raw.githubusercontent.com/REPLACE_ME/nyora-ota-parser/main/dist';
+  || 'https://hasan72341.github.io/nyora-ota-parsers';
 
 const sha256 = (buf) => createHash('sha256').update(buf).digest('hex');
 mkdirSync(DIST, { recursive: true });
@@ -63,12 +64,17 @@ copyFileSync(join(SRC, 'sources.json'), join(DIST, 'sources.json'));
 const bundleBuf = readFileSync(join(DIST, 'parsers.bundle.js'));
 const sourcesBuf = readFileSync(join(DIST, 'sources.json'));
 const manifestPath = join(DIST, 'manifest.json');
+const versionOverride = Number.parseInt(process.env.NYORA_OTA_VERSION || '', 10);
 let prevVersion = 0;
-if (existsSync(manifestPath)) {
-  try { prevVersion = JSON.parse(readFileSync(manifestPath, 'utf8')).version || 0; } catch { /* ignore */ }
+if (!Number.isFinite(versionOverride) || versionOverride <= 0) {
+  if (existsSync(VERSION_FILE)) {
+    try { prevVersion = Number.parseInt(readFileSync(VERSION_FILE, 'utf8').trim(), 10) || 0; } catch { /* ignore */ }
+  } else if (existsSync(manifestPath)) {
+    try { prevVersion = JSON.parse(readFileSync(manifestPath, 'utf8')).version || 0; } catch { /* ignore */ }
+  }
 }
 const manifest = {
-  version: prevVersion + 1,
+  version: Number.isFinite(versionOverride) && versionOverride > 0 ? versionOverride : prevVersion + 1,
   bundle: { url: `${OTA_BASE}/parsers.bundle.js`, sha256: sha256(bundleBuf), bytes: bundleBuf.length },
   sources: { url: `${OTA_BASE}/sources.json`, sha256: sha256(sourcesBuf), bytes: sourcesBuf.length },
 };
@@ -388,7 +394,7 @@ const dashboardHtml = `<!DOCTYPE html>
         </div>
 
         <div class="copy-box">
-            <div class="copy-text" id="urlText">https://hasan72341.github.io/nyora-ota-parsers/manifest.json</div>
+            <div class="copy-text" id="urlText">${OTA_BASE}/manifest.json</div>
             <button class="copy-btn" onclick="copyUrl()">Copy URL</button>
         </div>
 
@@ -500,4 +506,3 @@ console.log(`Built parsers v${manifest.version}`);
 console.log(`  bundle:  ${bundleBuf.length} bytes  sha256 ${manifest.bundle.sha256.slice(0, 12)}…`);
 console.log(`  sources: ${sourcesBuf.length} bytes  sha256 ${manifest.sources.sha256.slice(0, 12)}…`);
 console.log(`  OTA base: ${OTA_BASE}`);
-
