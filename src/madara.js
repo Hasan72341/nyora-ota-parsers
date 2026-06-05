@@ -111,6 +111,7 @@ export class MadaraParser extends BaseParser {
 
     asuraSeriesKey(url) {
         const rel = this.toRelativeUrl(url || "");
+        // Try to match the last segment with hash first, then fallback to general pattern
         const match = rel.match(/\/(series|comics|manga)\/([^/?#]+)/);
         return match ? match[2] : "";
     }
@@ -120,7 +121,7 @@ export class MadaraParser extends BaseParser {
         return JSON.parse(text);
     }
 
-        async getAsuraDetails(manga) {
+            async getAsuraDetails(manga) {
         let key = this.asuraSeriesKey(manga.url);
         if (!key) throw new Error("Missing Asura series key");
         
@@ -129,29 +130,41 @@ export class MadaraParser extends BaseParser {
             try {
                 const text = await this.context.httpGet(`${apiBase}/api/series/${k}?nyoraTry=${Date.now()}`);
                 const res = JSON.parse(text);
-                return res.series || res.data || res;
+                const s = res.series || res.data || res;
+                return (s && s.title) ? s : null;
             } catch { return null; }
         };
 
         let series = await fetchSeries(key);
         
-        if (!series || !series.title) {
+        // If initial key fails (likely due to missing hash), try title-based search resolution
+        if (!series) {
              try {
-                const searchUrl = `https://${this.domain}/browse?search=${encodeURIComponent(manga.title)}`;
+                // Normalize search term: remove apostrophes to avoid mismatch issues
+                const searchTerm = manga.title.replace(/['’]/g, "");
+                const searchUrl = `https://asurascans.com/browse?search=${encodeURIComponent(searchTerm)}`;
                 const searchHtml = await this.context.httpGet(searchUrl, this);
                 const searchDoc = this.context.parseHTML(searchHtml);
+                
                 const links = Array.from(searchDoc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"]'));
-                const foundA = links.find(a => a.textContent.trim().toLowerCase() === manga.title.toLowerCase()) || links[0];
+                
+                const normalize = (t) => t.toLowerCase().replace(/[^a-z0-9]/g, "");
+                const targetTitle = normalize(manga.title);
+                
+                const foundA = links.find(a => normalize(a.textContent) === targetTitle) || links[0];
                 
                 if (foundA) {
                     const newRel = this.toRelativeUrl(foundA.getAttribute("href")).replace(/\/$/, "");
-                    key = this.asuraSeriesKey(newRel);
-                    if (key) series = await fetchSeries(key);
+                    const newKey = this.asuraSeriesKey(newRel);
+                    if (newKey && newKey !== key) {
+                        series = await fetchSeries(newKey);
+                        if (series) key = newKey;
+                    }
                 }
-             } catch {}
+             } catch (e) {}
         }
 
-        if (!series || !series.title) series = {};
+        if (!series) series = {};
 
         let chapterRows = [];
         try {
@@ -237,7 +250,7 @@ export class MadaraParser extends BaseParser {
         for (const a of Array.from(doc.querySelectorAll('a[href*="/chapter/"]'))) {
             const href = a.getAttribute("href") || "";
             const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
-            if (!relHref.startsWith("/comics/") || !relHref.includes("/chapter/") || seen.has(relHref)) continue;
+            if (!relHref.match(/\\\/(series|comics|manga)\\\//)  || !relHref.includes("/chapter/") || seen.has(relHref)) continue;
             const text = a.textContent.replace(/\s+/g, " ").trim();
             const match = text.match(/Chapter\s+[\d.]+/i) || relHref.match(/chapter\/([^/?#]+)/i);
             const title = match ? String(match[0]).replace("chapter/", "Chapter ") : text || "Chapter";

@@ -1340,11 +1340,11 @@
   "className": "AsuraScansUs",
   "title": "Asura Scans",
   "locale": "en",
-  "domain": "asuracomic.net",
+  "domain": "asurascans.com",
   "family": "MadaraParser",
   "isNsfw": false,
   "overrides": {
-   "listUrl": "series/",
+   "listUrl": "browse/",
    "tagPrefix": "genres/"
   }
  },
