@@ -75,147 +75,377 @@ const manifest = {
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 
 // --- 3.5 Diagnostic Dashboard (index.html) to prevent Pages 404 ---
+let totalSources = 0;
+try {
+  totalSources = JSON.parse(sourcesBuf.toString()).length;
+} catch (e) {
+  totalSources = 0;
+}
+
 const dashboardHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyora OTA Parsers Status</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Nyora Parser Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #0d0f12;
-            --card: #15181e;
+            --bg: #090b0e;
+            --card: #11141a;
+            --card-border: rgba(255, 255, 255, 0.04);
             --accent: #ff007f;
             --accent-grad: linear-gradient(135deg, #ff007f 0%, #7f00ff 100%);
-            --text: #e2e8f0;
-            --muted: #64748b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --success: #10b981;
         }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-color: var(--bg);
-            color: var(--text);
+            color: var(--text-primary);
             font-family: 'Outfit', sans-serif;
-            margin: 0;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            padding: 1.5rem;
+            position: relative;
+            overflow-x: hidden;
         }
-        .container {
-            background-color: var(--card);
-            padding: 2.5rem;
-            border-radius: 1.25rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            max-width: 500px;
+
+        /* Ambient glowing backdrop */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent-grad);
+            filter: blur(120px);
+            opacity: 0.15;
+            top: 10%;
+            left: 10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: var(--accent-grad);
+            filter: blur(110px);
+            opacity: 0.12;
+            bottom: 10%;
+            right: 10%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .portal-card {
+            background: var(--card);
+            border: 1px solid var(--card-border);
+            border-radius: 1.5rem;
             width: 100%;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 460px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1;
+            position: relative;
         }
-        h1 {
+
+        /* Responsive padding scaling */
+        @media (max-width: 480px) {
+            .portal-card {
+                padding: 1.5rem;
+                border-radius: 1.25rem;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(16, 185, 129, 0.08);
+            border: 1px solid rgba(16, 185, 129, 0.15);
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            color: var(--success);
+            font-size: 0.75rem;
             font-weight: 600;
-            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--success);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 12px var(--success); }
+            100% { transform: scale(0.95); opacity: 0.7; }
+        }
+
+        .title {
+            font-size: 1.75rem;
+            font-weight: 700;
             background: var(--accent-grad);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
         }
-        .status-badge {
-            display: inline-block;
-            padding: 0.4rem 1rem;
-            border-radius: 2rem;
-            background: rgba(0, 230, 118, 0.1);
-            color: #00e676;
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-bottom: 1.5rem;
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
-        .meta-grid {
+
+        /* Stats Section */
+        .stats-row {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
             margin-bottom: 2rem;
-            text-align: left;
         }
-        .meta-item {
-            background: rgba(255,255,255,0.02);
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-            border: 1px solid rgba(255,255,255,0.03);
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            border-radius: 1rem;
+            padding: 0.85rem 0.5rem;
+            text-align: center;
+            transition: border-color 0.2s ease;
         }
-        .meta-label {
-            font-size: 0.75rem;
-            color: var(--muted);
+
+        .stat-card:hover {
+            border-color: rgba(255, 255, 255, 0.06);
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
             text-transform: uppercase;
-        }
-        .meta-val {
-            font-size: 1.1rem;
             font-weight: 600;
-            margin-top: 0.2rem;
+            letter-spacing: 0.05em;
         }
-        .links {
+
+        /* Integration Helper */
+        .copy-box {
+            background: #080a0d;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 0.75rem;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            font-size: 0.8rem;
+        }
+
+        .copy-text {
+            color: var(--text-secondary);
+            font-family: monospace;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-right: 0.5rem;
+        }
+
+        .copy-btn {
+            background: var(--accent-grad);
+            border: none;
+            color: var(--text-primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            flex-shrink: 0;
+        }
+
+        .copy-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* File list styling */
+        .file-list {
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            margin-bottom: 1.5rem;
         }
-        a.btn {
-            display: block;
-            padding: 0.85rem;
-            border-radius: 0.5rem;
+
+        .file-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            border-radius: 0.75rem;
+            padding: 0.85rem 1rem;
             text-decoration: none;
-            color: var(--text);
-            font-weight: 600;
+            color: var(--text-primary);
             transition: all 0.2s ease;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.08);
         }
-        a.btn:hover {
+
+        .file-row:hover {
             transform: translateY(-2px);
-            background: rgba(255,255,255,0.08);
-            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.02);
+            border-color: rgba(255, 0, 127, 0.2);
         }
-        a.btn.primary {
-            background: var(--accent-grad);
-            border: none;
+
+        .file-info {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 0.2rem;
         }
-        a.btn.primary:hover {
-            opacity: 0.9;
-            box-shadow: 0 0 15px rgba(255,0,127,0.4);
+
+        .file-name {
+            font-size: 0.9rem;
+            font-weight: 500;
         }
-        footer {
+
+        .file-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .arrow-icon {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+
+        .file-row:hover .arrow-icon {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
             margin-top: 2rem;
-            font-size: 0.8rem;
-            color: var(--muted);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="status-badge">● Systems Operational</div>
-        <h1>Nyora OTA Scrapers</h1>
-        <p style="color: var(--muted); margin-bottom: 2rem;">Host and CDN for Nyora's Over-the-Air parser updates.</p>
-        
-        <div class="meta-grid">
-            <div class="meta-item">
-                <div class="meta-label">Active Version</div>
-                <div class="meta-val">v${manifest.version}</div>
+    <div class="portal-card">
+        <div class="header">
+            <div class="status-pill">
+                <div class="status-dot"></div>
+                Active Release
             </div>
-            <div class="meta-item">
-                <div class="meta-label">Bundle Size</div>
-                <div class="meta-val">${(bundleBuf.length / 1024).toFixed(1)} KB</div>
+            <div class="title">Nyora Parsers</div>
+            <div class="subtitle">Cloud distribution and OTA delivery portal for Nyora's scraper engines.</div>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-value">v${manifest.version}</div>
+                <div class="stat-label">Version</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${(bundleBuf.length / 1024).toFixed(0)}k</div>
+                <div class="stat-label">Bundle</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalSources}</div>
+                <div class="stat-label">Sources</div>
             </div>
         </div>
 
-        <div class="links">
-            <a href="manifest.json" class="btn primary">View manifest.json</a>
-            <a href="parsers.bundle.js" class="btn">Download parsers.bundle.js</a>
-            <a href="sources.json" class="btn">View sources.json</a>
+        <div class="copy-box">
+            <div class="copy-text" id="urlText">https://hasan72341.github.io/nyora-ota-parsers/manifest.json</div>
+            <button class="copy-btn" onclick="copyUrl()">Copy URL</button>
         </div>
 
-        <footer>Built automatically via GitHub Actions</footer>
+        <div class="file-list">
+            <a href="manifest.json" class="file-row">
+                <div class="file-info">
+                    <span class="file-name">manifest.json</span>
+                    <span class="file-meta">Distribution release index</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+            <a href="parsers.bundle.js" class="file-row">
+                <div class="file-info">
+                    <span class="file-name">parsers.bundle.js</span>
+                    <span class="file-meta">JavaScript scraper package</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+            <a href="sources.json" class="file-row">
+                <div class="file-info">
+                    <span class="file-name">sources.json</span>
+                    <span class="file-meta">Metadata catalog definitions</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            Build verified & compiled via GitHub Actions
+        </div>
     </div>
+
+    <script>
+        function copyUrl() {
+            const el = document.createElement('textarea');
+            el.value = document.getElementById('urlText').innerText;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            
+            const btn = document.querySelector('.copy-btn');
+            const orig = btn.innerText;
+            btn.innerText = 'Copied!';
+            btn.style.background = '#10b981';
+            setTimeout(() => {
+                btn.innerText = orig;
+                btn.style.background = '';
+            }, 1500);
+        }
+    </script>
 </body>
 </html>`;
+
 writeFileSync(join(DIST, 'index.html'), dashboardHtml + '\n');
 console.log('  generated index.html dashboard');
+
 
 
 // --- 4. Fan out to every platform's bundled-fallback location (if in monorepo) ---
