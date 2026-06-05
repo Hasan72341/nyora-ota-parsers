@@ -103,7 +103,8 @@ export class MadaraParser extends BaseParser {
 
     asuraSeriesKey(url) {
         const rel = this.toRelativeUrl(url || "");
-        return (rel.match(/\/comics\/([^/?#]+)/) || [])[1] || "";
+        const match = rel.match(/\/(series|comics|manga)\/([^/?#]+)/);
+        return match ? match[2] : "";
     }
 
     async getJson(url) {
@@ -111,32 +112,57 @@ export class MadaraParser extends BaseParser {
         return JSON.parse(text);
     }
 
-    async getAsuraDetails(manga) {
-        const key = this.asuraSeriesKey(manga.url);
+        async getAsuraDetails(manga) {
+        let key = this.asuraSeriesKey(manga.url);
         if (!key) throw new Error("Missing Asura series key");
-        let series = {};
+        
+        const apiBase = this.asuraApiBase();
+        const fetchSeries = async (k) => {
+            try {
+                const text = await this.context.httpGet(`${apiBase}/api/series/${k}?nyoraTry=${Date.now()}`);
+                const res = JSON.parse(text);
+                return res.series || res.data || res;
+            } catch { return null; }
+        };
+
+        let series = await fetchSeries(key);
+        
+        if (!series || !series.title) {
+             try {
+                const searchUrl = `https://${this.domain}/browse?search=${encodeURIComponent(manga.title)}`;
+                const searchHtml = await this.context.httpGet(searchUrl, this);
+                const searchDoc = this.context.parseHTML(searchHtml);
+                const links = Array.from(searchDoc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"]'));
+                const foundA = links.find(a => a.textContent.trim().toLowerCase() === manga.title.toLowerCase()) || links[0];
+                
+                if (foundA) {
+                    const newRel = this.toRelativeUrl(foundA.getAttribute("href")).replace(/\/$/, "");
+                    key = this.asuraSeriesKey(newRel);
+                    if (key) series = await fetchSeries(key);
+                }
+             } catch {}
+        }
+
+        if (!series || !series.title) series = {};
+
         let chapterRows = [];
         try {
-            const seriesRes = await this.getJson(`https://api.asurascans.com/api/series/${key}?nyoraTry=${Date.now()}`);
-            series = seriesRes.series || seriesRes.data || seriesRes;
-        } catch {
-            series = {};
-        }
-        try {
-            const chaptersRes = await this.getJson(`https://api.asurascans.com/api/series/${key}/chapters?nyoraTry=${Date.now()}`);
+            const chaptersRes = await this.getJson(`${apiBase}/api/series/${key}/chapters?nyoraTry=${Date.now()}`);
             chapterRows = Array.isArray(chaptersRes.data) ? chaptersRes.data : [];
         } catch {
             chapterRows = [];
         }
-        const publicUrl = series.public_url || `/comics/${key}`;
+        
+        const publicUrl = series.public_url || `/series/${key}`;
         const chapters = chapterRows.map((row) => new MangaChapter({
             id: `${publicUrl}/chapter/${row.number}`,
             url: `${publicUrl}/chapter/${row.number}`,
-            title: `Chapter ${row.number}`,
+            title: row.title || `Chapter ${row.number}`,
             number: Number(row.number) || 0,
             uploadDate: row.published_at ? new Date(row.published_at).toISOString() : null,
             source: this.source
         }));
+
         return new Manga({
             ...manga,
             id: publicUrl,
