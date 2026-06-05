@@ -6,7 +6,8 @@
   "description": "Single source of truth for Nyora's JS manga parsers. Builds parsers.bundle.js + manifest and fans out to all platforms (desktop/iOS bundle, web SPA + cloudflare module copies).",
   "scripts": {
     "build": "node build.mjs",
-    "smoke": "node smoke.mjs"
+    "smoke": "node smoke.mjs",
+    "test": "npm run build"
   },
   "devDependencies": {
     "esbuild": "^0.20.0",
