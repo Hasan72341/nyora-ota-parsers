@@ -60,7 +60,15 @@ export class MadaraParser extends BaseParser {
     }
 
     isAsuraAstro() {
-        return this.domain === "asurascans.com";
+        return this.domain === "asurascans.com" || this.domain === "asuracomic.net";
+    }
+
+    asuraApiBase() {
+        return "https://api.asurascans.com";
+    }
+
+    asuraCdnBase() {
+        return "https://cdn.asurascans.com";
     }
 
     async httpGetStable(url, marker) {
@@ -188,7 +196,7 @@ export class MadaraParser extends BaseParser {
         const number = (this.toRelativeUrl(chapter.url).match(/\/chapter\/([^/?#]+)/) || [])[1];
         if (key && number) {
             try {
-                const data = JSON.parse(await this.context.httpGet(`https://api.asurascans.com/api/series/${key}/chapters/${number}?nyoraTry=${Date.now()}`));
+                const data = JSON.parse(await this.context.httpGet(`${this.asuraApiBase()}/api/series/${key}/chapters/${number}?nyoraTry=${Date.now()}`));
                 const pages = data && data.data && data.data.chapter && Array.isArray(data.data.chapter.pages)
                     ? data.data.chapter.pages
                     : [];
@@ -214,7 +222,7 @@ export class MadaraParser extends BaseParser {
         const seriesSlug = key.replace(/-[a-f0-9]{8}$/i, "");
         return Array.from({ length: count }, (_, i) => {
             const page = String(i + 1).padStart(3, "0");
-            const url = `https://cdn.asurascans.com/asura-images/chapters/${seriesSlug}/${number}/${page}.webp`;
+            const url = `${this.asuraCdnBase()}/asura-images/chapters/${seriesSlug}/${number}/${page}.webp`;
             return new MangaPage({
                 id: url,
                 url,
