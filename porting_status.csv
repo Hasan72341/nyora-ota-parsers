@@ -1,0 +1,30 @@
+Family,Sources,Verified
+# 386 sources / 28 families. Bulk-extracted concretes added via port_sources.py + filter_candidates.mjs.
+MadaraParser,155,FULL
+MangaReaderParser,82,FULL
+ZeistMangaParser,29,FULL
+OneMangaParser,22,FULL
+HotComicsParser,12,FULL
+PizzaReaderParser,8,FULL
+WpComicsParser,8,FULL
+KeyoappParser,7,FULL
+FoolSlideParser,6,FULL
+LilianaParser,6,FULL
+MadthemeParser,6,FULL
+MmrcmsParser,6,FULL
+ScanParser,6,ORIGIN DEAD/PARKED
+IkenParser,5,FULL
+AnimeBootstrapParser,3,ORIGIN CF-BLOCKED
+CupFoxParser,3,ORIGIN DEAD
+FmreaderParser,3,FULL
+FuzzyDoodleParser,3,FULL
+GuyaParser,2,FULL
+InitMangaParser,2,FULL
+MangAdventureParser,2,FULL
+MangaWorldParser,2,FULL
+UzayMangaParser,2,FULL
+ZMangaParser,2,FULL
+ComicasoParser,1,LIST+DETAILS (pages via proxy)
+LikeMangaParser,1,FULL
+MangoThemeParser,1,LIST+DETAILS (pages via proxy)
+SinmhParser,1,ORIGIN 520

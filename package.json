@@ -1,0 +1,15 @@
+{
+  "name": "nyora-ota-parser",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Single source of truth for Nyora's JS manga parsers. Builds parsers.bundle.js + manifest and fans out to all platforms (desktop/iOS bundle, web SPA + cloudflare module copies).",
+  "scripts": {
+    "build": "node build.mjs",
+    "smoke": "node smoke.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "jsdom": "^29.1.1"
+  }
+}

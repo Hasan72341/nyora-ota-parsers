@@ -1,0 +1,3862 @@
+[
+ {
+  "id": "ADONISFANSUB",
+  "family": "MangaReaderParser",
+  "domain": "manga.adonisfansub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ALONESCANLATOR",
+  "family": "MadaraParser",
+  "domain": "alonescanlator.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 401,
+  "detail": ""
+ },
+ {
+  "id": "ALTERKAISCANS",
+  "family": "MangaReaderParser",
+  "domain": "alterkaiscans.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ANIMEXNOVEL",
+  "family": "ZeistMangaParser",
+  "domain": "www.animexnovel.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "ANISASCANS",
+  "family": "MadaraParser",
+  "domain": "anisascans.in",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ANZMANGASHD",
+  "family": "MmrcmsParser",
+  "domain": "www.anzmangashd.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "APENASMAISUMYAOI",
+  "family": "MadaraParser",
+  "domain": "apenasmaisumyaoi.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "APKOMIK",
+  "family": "MangaReaderParser",
+  "domain": "01.apkomik.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "APOLL_COMICS",
+  "family": "MadaraParser",
+  "domain": "apollcomics.es",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "AQUAMANGA",
+  "family": "MadaraParser",
+  "domain": "aquareader.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ARABSHENTAI",
+  "family": "MadaraParser",
+  "domain": "arabshentai.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "ARABTOONS",
+  "family": "MadaraParser",
+  "domain": "arabtoons.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ARAREASCANS",
+  "family": "MangaReaderParser",
+  "domain": "ar.kenmanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ARAZNOVEL",
+  "family": "MadaraParser",
+  "domain": "araznovel.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "ARCRELIGHT",
+  "family": "MangAdventureParser",
+  "domain": "arc-relight.com",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '�', \"��[\u0000 �M���\"... is not valid"
+ },
+ {
+  "id": "ARCURAFANSUB",
+  "family": "MangaReaderParser",
+  "domain": "arcurafansub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "AREASCANS",
+  "family": "MangaReaderParser",
+  "domain": "ar.kenmanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ARENASCANS",
+  "family": "MangaReaderParser",
+  "domain": "arenascan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ARTHUR_SCAN",
+  "family": "MadaraParser",
+  "domain": "arthurscan.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ASIALOTUSS",
+  "family": "MangaReaderParser",
+  "domain": "asialotuss.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "ASQORG",
+  "family": "MadaraParser",
+  "domain": "3asq.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ASSORTEDSCANS",
+  "family": "MangAdventureParser",
+  "domain": "assortedscans.com",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '�', \"�`�\u0002 �����\"... is not valid"
+ },
+ {
+  "id": "ASURASCANS_US",
+  "family": "MadaraParser",
+  "domain": "asurascans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ASURASCANSTR",
+  "family": "MadaraParser",
+  "domain": "asurascans.com.tr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "BACAKOMIK",
+  "family": "MangaReaderParser",
+  "domain": "bacakomik.my",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "BANANASCAN_COM",
+  "family": "MmrcmsParser",
+  "domain": "bananascans.com",
+  "cat": "FULL",
+  "list": 5,
+  "pages": 23,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "BEGATRANSLATION",
+  "family": "MadaraParser",
+  "domain": "begatranslation.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "BERSERKSCAN",
+  "family": "OneMangaParser",
+  "domain": "berserkscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "BEYONDTHEATARAXIA",
+  "family": "MadaraParser",
+  "domain": "www.beyondtheataraxia.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "BLUELOCKSCAN",
+  "family": "OneMangaParser",
+  "domain": "bluelockscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "BOOKMANGA",
+  "family": "MadaraParser",
+  "domain": "bookmanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "BORUTOEXPLORER",
+  "family": "MadaraParser",
+  "domain": "leitor.borutoexplorer.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "CAFECOMYAOI",
+  "family": "MadaraParser",
+  "domain": "cafecomyaoi.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "CAT_300",
+  "family": "MadaraParser",
+  "domain": "cat-300.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "CHAINSAWMANSCAN",
+  "family": "OneMangaParser",
+  "domain": "chainsawman-scan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "COMICAZEN",
+  "family": "ComicasoParser",
+  "domain": "comicazen.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "COMICSVALLEY",
+  "family": "MadaraParser",
+  "domain": "comicsvalley.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "COSMIC_SCANS",
+  "family": "MangaReaderParser",
+  "domain": "lc1.cosmicscans.to",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "CULTUREDWORKS",
+  "family": "MangaReaderParser",
+  "domain": "culturedworks.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DANDADAN",
+  "family": "OneMangaParser",
+  "domain": "dandadan.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DANKE",
+  "family": "GuyaParser",
+  "domain": "danke.moe",
+  "cat": "FULL",
+  "list": 656,
+  "pages": 2,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DATGARSCANLATION",
+  "family": "ZeistMangaParser",
+  "domain": "datgarscanlation.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DAYCOMICS",
+  "family": "HotComicsParser",
+  "domain": "daycomics.me/en",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "DEATHTOLLSCANS",
+  "family": "FoolSlideParser",
+  "domain": "reader.deathtollscans.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DEMONSLAYERSCAN",
+  "family": "OneMangaParser",
+  "domain": "demonslayerscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "DIAMONDFANSUB",
+  "family": "MadaraParser",
+  "domain": "diamondfansub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DOCTRUYEN3Q",
+  "family": "WpComicsParser",
+  "domain": "doctruyen3qui15.pro",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "DOCTRUYEN5S",
+  "family": "LilianaParser",
+  "domain": "manga.io.vn",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DOJING",
+  "family": "MangaReaderParser",
+  "domain": "dojing.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DOUJIN69",
+  "family": "MangaReaderParser",
+  "domain": "doujin69.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DOUJINKU",
+  "family": "MangaReaderParser",
+  "domain": "doujinku.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "DOUJINZA",
+  "family": "MadaraParser",
+  "domain": "doujinza.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DRAGONTEA",
+  "family": "MadaraParser",
+  "domain": "dragontea.ink",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "DRAGONTRANSLATIONORG",
+  "family": "MadaraParser",
+  "domain": "dragontranslation.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "DRSTONE",
+  "family": "OneMangaParser",
+  "domain": "drstone.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "DUOSCANLATORS",
+  "family": "ZeistMangaParser",
+  "domain": "duoscanlators.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ECCHIDOUJIN",
+  "family": "MangaReaderParser",
+  "domain": "ecchi-doujin.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "EDSCANLATION",
+  "family": "KeyoappParser",
+  "domain": "edscanlation.fr",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "ELEVENSCANLATOR",
+  "family": "ZeistMangaParser",
+  "domain": "elevenscanlator.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "ELFTOON",
+  "family": "MangaReaderParser",
+  "domain": "elftoon.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "EMPERORSCAN",
+  "family": "MadaraParser",
+  "domain": "imperiomanhua.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "ENTHUNDERSCANS",
+  "family": "MangaReaderParser",
+  "domain": "en-thunderscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ERO18X",
+  "family": "MadaraParser",
+  "domain": "ero18x.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "EROSSCANS",
+  "family": "MangaReaderParser",
+  "domain": "erosxscans.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "EUPHORIASCAN",
+  "family": "MadaraParser",
+  "domain": "euphoriascan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "EVILMANGA",
+  "family": "MangaReaderParser",
+  "domain": "evil-manga.eu",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "EZMANGA",
+  "family": "IkenParser",
+  "domain": "ezmanga.org",
+  "cat": "CF",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "FBSQUADS",
+  "family": "MadaraParser",
+  "domain": "fbsquadx.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "FENIXPROJECT",
+  "family": "MadaraParser",
+  "domain": "fenixproject.site",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "FIREFORCE",
+  "family": "OneMangaParser",
+  "domain": "fireforce.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "FIRESCANS",
+  "family": "MadaraParser",
+  "domain": "firescans.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "FMTEAM",
+  "family": "PizzaReaderParser",
+  "domain": "fmteam.fr",
+  "cat": "FULL",
+  "list": 19,
+  "pages": 36,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "FURYMANGA",
+  "family": "MangaReaderParser",
+  "domain": "myshojo.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "GAFELAND",
+  "family": "MangaReaderParser",
+  "domain": "www.gafeland.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "GAIATOON",
+  "family": "MangaReaderParser",
+  "domain": "gaiatoon.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "GALAXSCANS",
+  "family": "ZeistMangaParser",
+  "domain": "galaxscanlator.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "GARCIAMANGA",
+  "family": "MadaraParser",
+  "domain": "garciamanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "GDSCANS",
+  "family": "MadaraParser",
+  "domain": "gdscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "GEDECOMIX",
+  "family": "MadaraParser",
+  "domain": "gedecomix.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "GISTAMISHOUSEFANSUB",
+  "family": "ZeistMangaParser",
+  "domain": "gistamishousefansub.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 401,
+  "detail": ""
+ },
+ {
+  "id": "GOLGEBAHCESI",
+  "family": "MangaReaderParser",
+  "domain": "golgebahcesi.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "GRABBER",
+  "family": "MadaraParser",
+  "domain": "grabber.zone",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "GTOTHEGREATSITE",
+  "family": "PizzaReaderParser",
+  "domain": "reader.gtothegreatsite.net",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '�', \"��\u000f\u0000��{��\"... is not valid"
+ },
+ {
+  "id": "GUYACUBARI",
+  "family": "GuyaParser",
+  "domain": "guya.cubari.moe",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u001b', \"\u001b�\u0013\u0000���Y�_\"... is not valid"
+ },
+ {
+  "id": "HADESNOFANSUB",
+  "family": "MadaraParser",
+  "domain": "hadesnofansub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ },
+ {
+  "id": "HAIKYUU",
+  "family": "OneMangaParser",
+  "domain": "haikyuu.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "HARMONYSCAN",
+  "family": "MadaraParser",
+  "domain": "harmony-scan.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 502,
+  "detail": ""
+ },
+ {
+  "id": "HASTATEAM",
+  "family": "PizzaReaderParser",
+  "domain": "ddt.hastateam.com",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '�', \"��\u000f\u0000d5�|}\t\"... is not valid"
+ },
+ {
+  "id": "HASTATEAM_READER",
+  "family": "PizzaReaderParser",
+  "domain": "reader.hastateam.com",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u000b', \"\u000b�\u000b\u0000�7_���\"... is not valid"
+ },
+ {
+  "id": "HECKSCANS",
+  "family": "ZeistMangaParser",
+  "domain": "heckscans.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HELLSPARADISESCAN",
+  "family": "OneMangaParser",
+  "domain": "hellsparadisescan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "HENTAI_4FREE",
+  "family": "MadaraParser",
+  "domain": "hentai4free.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAICUBE",
+  "family": "MadaraParser",
+  "domain": "hentaicube.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAIREADER",
+  "family": "MangaReaderParser",
+  "domain": "hentaireader.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAISCANTRADVF",
+  "family": "MadaraParser",
+  "domain": "hentai.scantrad-vf.cc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "HENTAISLAYER",
+  "family": "FuzzyDoodleParser",
+  "domain": "hentaislayer.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAIXCOMIC",
+  "family": "MadaraParser",
+  "domain": "hentaixcomic.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAIXDICKGIRL",
+  "family": "MadaraParser",
+  "domain": "hentaixdickgirl.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAIXYURI",
+  "family": "MadaraParser",
+  "domain": "hentaixyuri.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HENTAIZONE",
+  "family": "MadaraParser",
+  "domain": "hentaizone.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "HERENSCAN",
+  "family": "MadaraParser",
+  "domain": "herenscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HIVECOMIC",
+  "family": "IkenParser",
+  "domain": "hivetoons.org",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u001f', \"\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\"... is not valid"
+ },
+ {
+  "id": "HNISCANTRAD",
+  "family": "PizzaReaderParser",
+  "domain": "hni-scantrad.net",
+  "cat": "FULL",
+  "list": 6,
+  "pages": 15,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HOTCOMICS",
+  "family": "HotComicsParser",
+  "domain": "hotcomics.me/en",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "HOTOON",
+  "family": "MadaraParser",
+  "domain": "01.holotoon.site",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "HUNTERXHUNTERSCAN",
+  "family": "OneMangaParser",
+  "domain": "hunterxhunterscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "HWAGO",
+  "family": "MadaraParser",
+  "domain": "01.hwago.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "IMPERIODABRITANNIA",
+  "family": "MangoThemeParser",
+  "domain": "imperiodabritannia.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "INFRAFANDUB",
+  "family": "MadaraParser",
+  "domain": "infrafandub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ISEKAISCAN",
+  "family": "MadaraParser",
+  "domain": "www.isekaiscan.top",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "IZANAMISCANS",
+  "family": "MangaReaderParser",
+  "domain": "izanamiscans.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KANZENIN",
+  "family": "MangaReaderParser",
+  "domain": "kanzenin.info",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KEWNSCANS",
+  "family": "KeyoappParser",
+  "domain": "kewnscans.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KINGDOMSCAN",
+  "family": "OneMangaParser",
+  "domain": "kingdomscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "KISSMANGA",
+  "family": "MadaraParser",
+  "domain": "kissmanga.in",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "KLZ9",
+  "family": "FmreaderParser",
+  "domain": "klz9.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "KNIGHTNOSCANLATION",
+  "family": "MadaraParser",
+  "domain": "lectorknight.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "KOFISCANS",
+  "family": "MangaReaderParser",
+  "domain": "isekaikomik.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KOMBATCH",
+  "family": "MangaReaderParser",
+  "domain": "kombatch.cc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKDEWASA_ONLINE",
+  "family": "MangaReaderParser",
+  "domain": "komikdewasa.art",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKMAMA",
+  "family": "MangaReaderParser",
+  "domain": "komikmama.online",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKPOI",
+  "family": "MangaReaderParser",
+  "domain": "komikpoi.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKREALM",
+  "family": "ZeistMangaParser",
+  "domain": "komikrealm.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKSTATION",
+  "family": "MangaReaderParser",
+  "domain": "komikstation.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKTAP",
+  "family": "MangaReaderParser",
+  "domain": "komiktap.info",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKU",
+  "family": "MangaReaderParser",
+  "domain": "komiku.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "KOMIKZOID",
+  "family": "AnimeBootstrapParser",
+  "domain": "komikzoid.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "KUNMANGA",
+  "family": "MadaraParser",
+  "domain": "kunmanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "LAMIMANGA",
+  "family": "MangaReaderParser",
+  "domain": "mangalami.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LECTORHENTAI",
+  "family": "MangaReaderParser",
+  "domain": "lectorhentai.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LEGENDSCANLATIONS",
+  "family": "MadaraParser",
+  "domain": "escaneodeleyendas.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 503,
+  "detail": ""
+ },
+ {
+  "id": "LEITORKAMISAMA",
+  "family": "MadaraParser",
+  "domain": "leitor.kamisama.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LEKMANGAORG",
+  "family": "MadaraParser",
+  "domain": "lekmanga.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "LELMANGA",
+  "family": "MangaReaderParser",
+  "domain": "www.lelmanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "LELSCANVF",
+  "family": "FuzzyDoodleParser",
+  "domain": "lelscanfr.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "LEPOYTL",
+  "family": "ZeistMangaParser",
+  "domain": "www.lepoytl.cloud",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LER999",
+  "family": "ZeistMangaParser",
+  "domain": "ler999.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LERMANGAS",
+  "family": "MadaraParser",
+  "domain": "lermangas.me",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "LIANSCANS",
+  "family": "MangaReaderParser",
+  "domain": "www.lianscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LIKEMANGA",
+  "family": "LikeMangaParser",
+  "domain": "likemanga.ink",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LIKEMANGANET",
+  "family": "MadaraParser",
+  "domain": "like-manga.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LILYMANGA",
+  "family": "MadaraParser",
+  "domain": "lilymanga.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LIMBOSCAN",
+  "family": "MadaraParser",
+  "domain": "limboscan.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LONERTL",
+  "family": "ZeistMangaParser",
+  "domain": "loner-tl.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LUMOSKOMIK",
+  "family": "MadaraParser",
+  "domain": "02.lumosgg.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "LUNASCANS",
+  "family": "MadaraParser",
+  "domain": "tuhafscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "LUPITEAM",
+  "family": "PizzaReaderParser",
+  "domain": "lupiteam.net",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u000b', \"\u000b�\u000b\u0000d3���E\"... is not valid"
+ },
+ {
+  "id": "LUVYAA",
+  "family": "MangaReaderParser",
+  "domain": "v4.luvyaa.co",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MADARADEX",
+  "family": "MadaraParser",
+  "domain": "madaradex.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MAGUSMANGA",
+  "family": "IkenParser",
+  "domain": "magustoon.org",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u001f', \"\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\"... is not valid"
+ },
+ {
+  "id": "MAID_ID",
+  "family": "ZMangaParser",
+  "domain": "www.maid.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MAKIMAAAAA",
+  "family": "MangaReaderParser",
+  "domain": "makimaaaaa.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGA_CRAB",
+  "family": "MadaraParser",
+  "domain": "mangacrab.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 400,
+  "detail": ""
+ },
+ {
+  "id": "MANGA_DENIZI",
+  "family": "MmrcmsParser",
+  "domain": "www.mangadenizi.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "MANGA_DISTRICT",
+  "family": "MadaraParser",
+  "domain": "mangadistrict.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGA_MANHUA",
+  "family": "MadaraParser",
+  "domain": "mangaonlineteam.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ },
+ {
+  "id": "MANGA_SCANTRAD",
+  "family": "MadaraParser",
+  "domain": "manga-scantrad.io",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGA168",
+  "family": "MangaReaderParser",
+  "domain": "manga168.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGA1ST",
+  "family": "MadaraParser",
+  "domain": "manga1st.online",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "MANGA689",
+  "family": "MangaReaderParser",
+  "domain": "manga689.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAAILAND",
+  "family": "ZeistMangaParser",
+  "domain": "manga-ai-land.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGACLASH",
+  "family": "MadaraParser",
+  "domain": "toonclash.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGACRAZY",
+  "family": "MadaraParser",
+  "domain": "mangacrazy.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGACUTE",
+  "family": "MadthemeParser",
+  "domain": "mangacute.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGAECLIPSE",
+  "family": "MadaraParser",
+  "domain": "mangaeclipse.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAFASTNET",
+  "family": "MadaraParser",
+  "domain": "manhuafast.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAFOREST",
+  "family": "MadthemeParser",
+  "domain": "mangaforest.me",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGAFORFREE",
+  "family": "MadaraParser",
+  "domain": "mangaforfree.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAFOXFULL",
+  "family": "MadaraParser",
+  "domain": "mangafoxfull.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGAFR",
+  "family": "ScanParser",
+  "domain": "www.mangafr.org",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANGAGG",
+  "family": "MadaraParser",
+  "domain": "mangagg.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGAHAUS",
+  "family": "CupFoxParser",
+  "domain": "www.mangahaus.com",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANGAHONA",
+  "family": "MadaraParser",
+  "domain": "mangahona.pl",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ },
+ {
+  "id": "MANGAHUB",
+  "family": "MadaraParser",
+  "domain": "mangahub.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAITALIA",
+  "family": "ScanParser",
+  "domain": "mangaita.io",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAJINX",
+  "family": "MadthemeParser",
+  "domain": "mgjinx.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAKIMI",
+  "family": "MangaReaderParser",
+  "domain": "www.mangakimi.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAKOINU",
+  "family": "CupFoxParser",
+  "domain": "www.mangakoinu.com",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANGAKOMA01",
+  "family": "LilianaParser",
+  "domain": "mangakoma01.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 302,
+  "detail": ""
+ },
+ {
+  "id": "MANGALC",
+  "family": "MadaraParser",
+  "domain": "manga-lc.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAONLINE_BLOG",
+  "family": "MadaraParser",
+  "domain": "mangaonline.blog",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ },
+ {
+  "id": "MANGAONLINETEAM",
+  "family": "MadaraParser",
+  "domain": "mangaonlineteam.com",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANGAOWL_IO",
+  "family": "MadaraParser",
+  "domain": "mangaowl.io",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAPUMA",
+  "family": "MadthemeParser",
+  "domain": "mangapuma.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGARAW",
+  "family": "WpComicsParser",
+  "domain": "mangaraw.best",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAREAD",
+  "family": "MadaraParser",
+  "domain": "www.mangaread.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGASECT",
+  "family": "LilianaParser",
+  "domain": "mangasect.net",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANGASEHRI",
+  "family": "MadaraParser",
+  "domain": "manga-sehri.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGASEHRINET",
+  "family": "MadaraParser",
+  "domain": "manga-sehri.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGASHIINA",
+  "family": "MangaReaderParser",
+  "domain": "mangamukai.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGASNOSEKAI",
+  "family": "MadaraParser",
+  "domain": "mangasnosekai.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGASORIGINES",
+  "family": "MadaraParser",
+  "domain": "mangas-origines.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGASOUL",
+  "family": "ZeistMangaParser",
+  "domain": "www.manga-soul.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGASTARZ",
+  "family": "MadaraParser",
+  "domain": "manga-starz.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANGASUSHI",
+  "family": "MadaraParser",
+  "domain": "mangasushi.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGASUSUKU",
+  "family": "MangaReaderParser",
+  "domain": "mangasusuku.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGATELLERS",
+  "family": "FoolSlideParser",
+  "domain": "reader.mangatellers.gr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGATERRA",
+  "family": "ScanParser",
+  "domain": "manga-terra.com",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANGATX_CC",
+  "family": "MangaReaderParser",
+  "domain": "mangatx.cc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAWORLD",
+  "family": "MangaWorldParser",
+  "domain": "mangaworld.mx",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAWORLDADULT",
+  "family": "MangaWorldParser",
+  "domain": "mangaworldadult.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAWOW",
+  "family": "MadaraParser",
+  "domain": "mangawow.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANGAXYZ",
+  "family": "MadthemeParser",
+  "domain": "mangaxyz.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MANGAZIN",
+  "family": "MadaraParser",
+  "domain": "mangazin.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHASTRO",
+  "family": "MadaraParser",
+  "domain": "manhastro.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ },
+ {
+  "id": "MANHATIC",
+  "family": "MadaraParser",
+  "domain": "manhatic.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHATOK",
+  "family": "ZeistMangaParser",
+  "domain": "manhatok.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHUABUG",
+  "family": "MadaraParser",
+  "domain": "www.manhuabug.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 400,
+  "detail": ""
+ },
+ {
+  "id": "MANHUAGOLD",
+  "family": "LilianaParser",
+  "domain": "manhuagold.top",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "MANHUAHOT",
+  "family": "MadaraParser",
+  "domain": "manhuahot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHUAPLUS",
+  "family": "MadaraParser",
+  "domain": "manhuaplus.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHUAPLUSORG",
+  "family": "LilianaParser",
+  "domain": "manhuaplus.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHUASCAN",
+  "family": "MadthemeParser",
+  "domain": "kaliscan.io",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHUASCANUS",
+  "family": "MangaReaderParser",
+  "domain": "manhuascan.us",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHUAZONGHE",
+  "family": "MadaraParser",
+  "domain": "www.manhuazonghe.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWA_ES",
+  "family": "MadaraParser",
+  "domain": "manhwa-es.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWABREAKUP",
+  "family": "MadaraParser",
+  "domain": "www.manhwabreakup.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHWACLAN",
+  "family": "MadaraParser",
+  "domain": "manhwaclan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWADEN",
+  "family": "MadaraParser",
+  "domain": "www.manhwaden.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHWAFULL",
+  "family": "MadaraParser",
+  "domain": "manhwafull.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ },
+ {
+  "id": "MANHWAINDO",
+  "family": "MangaReaderParser",
+  "domain": "www.manhwaindo.my",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MANHWAINDOICU",
+  "family": "MangaReaderParser",
+  "domain": "komikdewasa.art",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWALAND",
+  "family": "MangaReaderParser",
+  "domain": "www.manhwaland.baby",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWALATINO",
+  "family": "MadaraParser",
+  "domain": "manhwa-latino.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWAONLINE",
+  "family": "MadaraParser",
+  "domain": "manhwa-online.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWARAW",
+  "family": "MadaraParser",
+  "domain": "manhwa-raw.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWASCO",
+  "family": "MadaraParser",
+  "domain": "manhwasco.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 307,
+  "detail": ""
+ },
+ {
+  "id": "MANHWATOP",
+  "family": "MadaraParser",
+  "domain": "manhwatop.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MANHWAZ",
+  "family": "MadaraParser",
+  "domain": "manhwaz.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "MARMOTA",
+  "family": "MadaraParser",
+  "domain": "marmota.me",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MASHLESCAN",
+  "family": "OneMangaParser",
+  "domain": "mashlescan.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MENUDO_FANSUB",
+  "family": "FoolSlideParser",
+  "domain": "www.menudo-fansub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MERLINSCANS",
+  "family": "InitMangaParser",
+  "domain": "merlintoon.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MIAUSCAN",
+  "family": "MangaReaderParser",
+  "domain": "leemiau.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MIKROKOSMOSFB",
+  "family": "ZeistMangaParser",
+  "domain": "mikrokosmosfb.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MINITWOSCAN",
+  "family": "MadaraParser",
+  "domain": "minitwoscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MUGIMANGA",
+  "family": "MadaraParser",
+  "domain": "mugimanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 400,
+  "detail": ""
+ },
+ {
+  "id": "MUGIWARASOFICIAL",
+  "family": "MadaraParser",
+  "domain": "mugiwarasoficial.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MUNDO_MANHWA",
+  "family": "MadaraParser",
+  "domain": "mundomanhwa.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "MYHEROACADEMIASCAN",
+  "family": "OneMangaParser",
+  "domain": "myheroacademiascan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "MYSHOJO",
+  "family": "MangaReaderParser",
+  "domain": "myshojo.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NECROSCANS",
+  "family": "KeyoappParser",
+  "domain": "necroscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "NEROXUS",
+  "family": "MadaraParser",
+  "domain": "neroxus.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NETTRUYEN",
+  "family": "WpComicsParser",
+  "domain": "nettruyenar.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "NETTRUYENHE",
+  "family": "WpComicsParser",
+  "domain": "nettruyenhe.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "NETTRUYENVIE",
+  "family": "WpComicsParser",
+  "domain": "nettruyenvia.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "NEUMANGA",
+  "family": "AnimeBootstrapParser",
+  "domain": "neumanga.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "NEWTRUYEN",
+  "family": "WpComicsParser",
+  "domain": "newtruyentranh4.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "NGAMENKOMIK",
+  "family": "ZeistMangaParser",
+  "domain": "ngamenkomik05.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NHATTRUYENVN",
+  "family": "WpComicsParser",
+  "domain": "nhattruyenqq.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "NIJITRANSLATIONS",
+  "family": "MadaraParser",
+  "domain": "niji-translations.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NINJASCAN",
+  "family": "MadaraParser",
+  "domain": "ninjacomics.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NIRVANAMANGA",
+  "family": "MangaReaderParser",
+  "domain": "nirvanamanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NITROMANGA",
+  "family": "MadaraParser",
+  "domain": "nitroscans.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "NOBLESSETRANSLATIONS",
+  "family": "MadaraParser",
+  "domain": "nobledicion.yoveo.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NOCSUMMER",
+  "family": "MadaraParser",
+  "domain": "nocfsb.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "NOROMAX",
+  "family": "MangaReaderParser",
+  "domain": "noromax02.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "NOVELCROW",
+  "family": "MadaraParser",
+  "domain": "novelcrow.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "NYXSCANS",
+  "family": "IkenParser",
+  "domain": "nyxscans.com",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u001f', \"\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\"... is not valid"
+ },
+ {
+  "id": "OKYYKOMIK",
+  "family": "ZeistMangaParser",
+  "domain": "www.okyykomik.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ONEPIECESCAN",
+  "family": "OneMangaParser",
+  "domain": "onepiecescan.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ONEPUNCHMANSCAN",
+  "family": "OneMangaParser",
+  "domain": "onepunchmanscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "ONMA",
+  "family": "MmrcmsParser",
+  "domain": "onma.me",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ORIGAMIORPHEANS",
+  "family": "MangaReaderParser",
+  "domain": "origami-orpheans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "OSHINOKO",
+  "family": "OneMangaParser",
+  "domain": "oshinoko.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "PANTHEONSCAN",
+  "family": "MadaraParser",
+  "domain": "pantheon-scan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 307,
+  "detail": ""
+ },
+ {
+  "id": "PATIMANGA",
+  "family": "MangaReaderParser",
+  "domain": "www.patimanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "PETROTECHSOCIETY",
+  "family": "MadaraParser",
+  "domain": "www.petrotechsociety.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "PHOENIXSCANS",
+  "family": "PizzaReaderParser",
+  "domain": "www.phoenixscans.com",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u000b', \"\u000b�\u000b\u0000���}��\"... is not valid"
+ },
+ {
+  "id": "POINTZEROTOONS",
+  "family": "MangaReaderParser",
+  "domain": "pointzerotoons.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "QUAANHDAOCUTEO",
+  "family": "MadaraParser",
+  "domain": "qadcuteo.cc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RACKUSREADS",
+  "family": "MangaReaderParser",
+  "domain": "rackusreads.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAGNAROKSCANLATION",
+  "family": "MadaraParser",
+  "domain": "ragnarokscanlation.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAGNARSCANS",
+  "family": "InitMangaParser",
+  "domain": "ragnarscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "RAIJINSCANS",
+  "family": "MadaraParser",
+  "domain": "raijin-scans.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "RAIKISCAN",
+  "family": "MangaReaderParser",
+  "domain": "raikiscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAINDROPTEAMFAN",
+  "family": "MangaReaderParser",
+  "domain": "www.raindropteamfan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAISCANS",
+  "family": "KeyoappParser",
+  "domain": "kenscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 301,
+  "detail": ""
+ },
+ {
+  "id": "RAMAREADER",
+  "family": "FoolSlideParser",
+  "domain": "www.ramareader.it",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAVENSCANS",
+  "family": "MangaReaderParser",
+  "domain": "ravenscans.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAW1001",
+  "family": "LilianaParser",
+  "domain": "raw1001.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RAYSSCAN",
+  "family": "ZeistMangaParser",
+  "domain": "raysscan.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "READCOMICSONLINE",
+  "family": "MmrcmsParser",
+  "domain": "readcomicsonline.ru",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "READKOMIK",
+  "family": "MangaReaderParser",
+  "domain": "novelstreams.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "READNIFTEAM",
+  "family": "FoolSlideParser",
+  "domain": "read-nifteam.info",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "REAPERTRANS",
+  "family": "MangaReaderParser",
+  "domain": "reapertrans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RESETSCANS",
+  "family": "MadaraParser",
+  "domain": "reset-scans.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "REYUME",
+  "family": "ZeistMangaParser",
+  "domain": "www.re-yume.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "REZOSCANS",
+  "family": "KeyoappParser",
+  "domain": "rezoscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "RICHTOSCAN",
+  "family": "MadaraParser",
+  "domain": "r1.richtoon.top",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RIMUSCANS",
+  "family": "MangaReaderParser",
+  "domain": "rimuscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 404,
+  "detail": ""
+ },
+ {
+  "id": "ROCKSMANGA",
+  "family": "MadaraParser",
+  "domain": "rocksmanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 400,
+  "detail": ""
+ },
+ {
+  "id": "ROKARICOMICS",
+  "family": "MangaReaderParser",
+  "domain": "rokaricomics.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ROMANTIKMANGA",
+  "family": "MadaraParser",
+  "domain": "webtoonhatti.club",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "RUYAMANGA",
+  "family": "MadaraParser",
+  "domain": "ruyamanga.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SAKAMOTODAYS",
+  "family": "OneMangaParser",
+  "domain": "sakamotodays.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SAMURAISCAN",
+  "family": "MadaraParser",
+  "domain": "samuraiscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 400,
+  "detail": ""
+ },
+ {
+  "id": "SASANGEYOU",
+  "family": "MangaReaderParser",
+  "domain": "sasangeyou.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SCANBORUTO",
+  "family": "OneMangaParser",
+  "domain": "scanboruto.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SCANITA",
+  "family": "ScanParser",
+  "domain": "scanita.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SCANJUJUTSUKAISEN",
+  "family": "OneMangaParser",
+  "domain": "scanjujutsukaisen.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SCANS4U",
+  "family": "KeyoappParser",
+  "domain": "4uscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SCANTRAD",
+  "family": "ScanParser",
+  "domain": "scan-trad.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SCANVF",
+  "family": "MmrcmsParser",
+  "domain": "www.scan-vf.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SCANVFORG",
+  "family": "ScanParser",
+  "domain": "scanvf.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 302,
+  "detail": ""
+ },
+ {
+  "id": "SCYLLACOMICS",
+  "family": "FuzzyDoodleParser",
+  "domain": "scyllacomics.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SEINAGI",
+  "family": "FoolSlideParser",
+  "domain": "reader.seinagi.org.es",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "SEINEMANGA",
+  "family": "CupFoxParser",
+  "domain": "www.seinemanga.com",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "SEKTEDOUJIN",
+  "family": "MangaReaderParser",
+  "domain": "sektedoujin.cc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SEKTEKOMIK",
+  "family": "AnimeBootstrapParser",
+  "domain": "sektekomik.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SHADOWCEVIRI",
+  "family": "ZeistMangaParser",
+  "domain": "shadowceviri.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SHIBAMANGA",
+  "family": "MadaraParser",
+  "domain": "shibamanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SHIJIESCANS",
+  "family": "MangaReaderParser",
+  "domain": "shijiescans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SHIRAKAMI",
+  "family": "MangaReaderParser",
+  "domain": "shirakami.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SHIRO_DOUJIN",
+  "family": "ZMangaParser",
+  "domain": "shirodoujin.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SHIYURASUB",
+  "family": "ZeistMangaParser",
+  "domain": "shiyurasub.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SLEEPYTRANSLATIONS",
+  "family": "MadaraParser",
+  "domain": "sleepytranslations.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SNKSCAN",
+  "family": "OneMangaParser",
+  "domain": "snkscan.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SODSAIME",
+  "family": "MangaReaderParser",
+  "domain": "www.xn--l3c0azab5a2gta.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SOULSCANS",
+  "family": "MangaReaderParser",
+  "domain": "soulscans.my.id",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "STELLARSABER",
+  "family": "MangaReaderParser",
+  "domain": "stellarsaber.pro",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "SURYASCANS",
+  "family": "KeyoappParser",
+  "domain": "genzupdates.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 302,
+  "detail": ""
+ },
+ {
+  "id": "SUSHISCAN",
+  "family": "MangaReaderParser",
+  "domain": "sushiscan.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "SUSHISCANFR",
+  "family": "MangaReaderParser",
+  "domain": "sushiscan.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TANKOUHENTAI",
+  "family": "MadaraParser",
+  "domain": "tankouhentai.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TAROTSCANS",
+  "family": "MangaReaderParser",
+  "domain": "www.tarotscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TEMAKIMANGAS",
+  "family": "ZeistMangaParser",
+  "domain": "temakimangas.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TENSHIMANGA",
+  "family": "UzayMangaParser",
+  "domain": "tenshimanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TERRITORIOLEAL",
+  "family": "MadaraParser",
+  "domain": "territorioleal.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "THAIMANGA",
+  "family": "MangaReaderParser",
+  "domain": "www.thaimanga.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "THEBLANK",
+  "family": "MadaraParser",
+  "domain": "theblank.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "THUNDERSCANS",
+  "family": "MangaReaderParser",
+  "domain": "lavascans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TILKISCANS",
+  "family": "MadaraParser",
+  "domain": "www.tilkiscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOKYOREVENGERS",
+  "family": "OneMangaParser",
+  "domain": "tokyorevengers.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSDE",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/de",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSEN",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/en",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSES",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/es",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSESLA",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/mx",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSFR",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSIT",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/it",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSJA",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/ja",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSPT",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/por",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSSC",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/sc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 429,
+  "detail": ""
+ },
+ {
+  "id": "TOOMICSTC",
+  "family": "HotComicsParser",
+  "domain": "toomics.com/tc",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 429,
+  "detail": ""
+ },
+ {
+  "id": "TOOMTAMMANGA",
+  "family": "MangaReaderParser",
+  "domain": "toomtam-manga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOONCUBUS",
+  "family": "ZeistMangaParser",
+  "domain": "www.tooncubus.top",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOONFR",
+  "family": "MadaraParser",
+  "domain": "toonfr.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TOONGOD",
+  "family": "MadaraParser",
+  "domain": "www.toongod.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TOONHUNTER",
+  "family": "MangaReaderParser",
+  "domain": "toonhunter.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TOONILY",
+  "family": "MadaraParser",
+  "domain": "toonily.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TOONIZY",
+  "family": "MadaraParser",
+  "domain": "toonizy.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TOPCOMICPORNO",
+  "family": "MadaraParser",
+  "domain": "topcomicporno.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TOPMANHUA",
+  "family": "MadaraParser",
+  "domain": "manhuatop.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TOPTRUYEN",
+  "family": "WpComicsParser",
+  "domain": "www.toptruyentv11.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "TORTUGACEVIRI",
+  "family": "MadaraParser",
+  "domain": "tortugaceviri.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TRITINIA",
+  "family": "MadaraParser",
+  "domain": "tritinia.org",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TRMANGAOKU",
+  "family": "MadaraParser",
+  "domain": "trmangaoku.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TRUYENTRANHDAMMYY",
+  "family": "MadaraParser",
+  "domain": "truyentranhdammyy.site",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TSUNDOKU",
+  "family": "MangaReaderParser",
+  "domain": "tsundoku.com.br",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TUTTOANIMEMANGA",
+  "family": "PizzaReaderParser",
+  "domain": "tuttoanimemanga.net",
+  "cat": "FULL",
+  "list": 116,
+  "pages": 33,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "TYRANTSCANS",
+  "family": "ZeistMangaParser",
+  "domain": "www.tyrantscans.com",
+  "cat": "DEAD",
+  "list": 0,
+  "pages": 0,
+  "status": 0,
+  "detail": ""
+ },
+ {
+  "id": "ULASCOMIC",
+  "family": "ZeistMangaParser",
+  "domain": "www.ulascomic01.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "UMIMANGA",
+  "family": "MangaReaderParser",
+  "domain": "www.umimanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "UTOON",
+  "family": "MadaraParser",
+  "domain": "utoon.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "UZAYMANGA",
+  "family": "UzayMangaParser",
+  "domain": "uzaymanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "VINLANDSAGA",
+  "family": "OneMangaParser",
+  "domain": "vinlandsaga.fr",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "VORTEXSCANS",
+  "family": "IkenParser",
+  "domain": "vortexscans.org",
+  "cat": "ERROR",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": "Unexpected token '\u001f', \"\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\"... is not valid"
+ },
+ {
+  "id": "WALPURGISCAN",
+  "family": "MangaReaderParser",
+  "domain": "www.walpurgiscan.it",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 503,
+  "detail": ""
+ },
+ {
+  "id": "WEBDEXSCANS",
+  "family": "MadaraParser",
+  "domain": "webdexscans.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "WEBTOONEMPIRE",
+  "family": "MadaraParser",
+  "domain": "webtoonempire-bl.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "WEBTOONHATTI",
+  "family": "MadaraParser",
+  "domain": "webtoonhatti.club",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "WEBTOONXYZ",
+  "family": "MadaraParser",
+  "domain": "www.webtoon.xyz",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "WELOMA",
+  "family": "FmreaderParser",
+  "domain": "weloma.art",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "WELOVEMANGA",
+  "family": "FmreaderParser",
+  "domain": "welovemanga.one",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 302,
+  "detail": ""
+ },
+ {
+  "id": "WHALEMANGA",
+  "family": "MadaraParser",
+  "domain": "whalemanga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "WOLFSCANBR",
+  "family": "ZeistMangaParser",
+  "domain": "wolfscanbr.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "XMANHWA",
+  "family": "MadaraParser",
+  "domain": "www.manhwaden.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "XSANOMANGA",
+  "family": "ZeistMangaParser",
+  "domain": "www.xsano-manga.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "YAKSHACOMICS",
+  "family": "MadaraParser",
+  "domain": "yakshacomics.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "YAOIFANCLUB",
+  "family": "ZeistMangaParser",
+  "domain": "www.yaoifanclub.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "YAOIMANGA",
+  "family": "MadaraParser",
+  "domain": "yaoimanga.es",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "YAOIMANGAOKU",
+  "family": "MadaraParser",
+  "domain": "yaoimangaoku.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "YAOIX3",
+  "family": "MadaraParser",
+  "domain": "3xyaoi.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 403,
+  "detail": ""
+ },
+ {
+  "id": "YKMH",
+  "family": "SinmhParser",
+  "domain": "www.ykmh.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 520,
+  "detail": ""
+ },
+ {
+  "id": "YOKAITEAM",
+  "family": "ZeistMangaParser",
+  "domain": "yokai-team.blogspot.com",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 200,
+  "detail": ""
+ },
+ {
+  "id": "ZINCHANMANGA_NET",
+  "family": "MadaraParser",
+  "domain": "zinchangmanga.net",
+  "cat": "EMPTY",
+  "list": 0,
+  "pages": 0,
+  "status": 405,
+  "detail": ""
+ }
+]

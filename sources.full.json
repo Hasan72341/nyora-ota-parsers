@@ -1,0 +1,4320 @@
+[
+ {
+  "id": "KOMIKZOID",
+  "className": "KomikzoId",
+  "title": "KomikzoId",
+  "locale": "id",
+  "domain": "komikzoid.id",
+  "family": "AnimeBootstrapParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NEUMANGA",
+  "className": "NeuManga",
+  "title": "NeuManga.xyz",
+  "locale": "id",
+  "domain": "neumanga.id",
+  "family": "AnimeBootstrapParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SEKTEKOMIK",
+  "className": "SekteKomik",
+  "title": "SekteKomik",
+  "locale": "id",
+  "domain": "sektekomik.id",
+  "family": "AnimeBootstrapParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "COMICAZEN",
+  "className": "Comicazen",
+  "title": "Comicazen",
+  "locale": "id",
+  "domain": "comicazen.com",
+  "family": "ComicasoParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAHAUS",
+  "className": "MangaHaus",
+  "title": "MangaHaus",
+  "locale": "de",
+  "domain": "www.mangahaus.com",
+  "family": "CupFoxParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAKOINU",
+  "className": "MangaKoinu",
+  "title": "MangaKoinu",
+  "locale": "ja",
+  "domain": "www.mangakoinu.com",
+  "family": "CupFoxParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SEINEMANGA",
+  "className": "SeineManga",
+  "title": "SeineManga",
+  "locale": "fr",
+  "domain": "www.seinemanga.com",
+  "family": "CupFoxParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "KLZ9",
+  "className": "Klz9",
+  "title": "Klz9",
+  "locale": "ja",
+  "domain": "klz9.com",
+  "family": "FmreaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectChapter": "tr",
+   "selectPage": "img",
+   "selectDesc": "div.row:contains(Description) p"
+  }
+ },
+ {
+  "id": "WELOMA",
+  "className": "Weloma",
+  "title": "Weloma",
+  "locale": "ja",
+  "domain": "weloma.art",
+  "family": "FmreaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "WELOVEMANGA",
+  "className": "WeLoveManga",
+  "title": "WeLoveManga",
+  "locale": "ja",
+  "domain": "welovemanga.one",
+  "family": "FmreaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DEATHTOLLSCANS",
+  "className": "Deathtollscans",
+  "title": "DeathTollScans",
+  "locale": "en",
+  "domain": "reader.deathtollscans.net",
+  "family": "FoolSlideParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGATELLERS",
+  "className": "Mangatellers",
+  "title": "Mangatellers",
+  "locale": "en",
+  "domain": "reader.mangatellers.gr",
+  "family": "FoolSlideParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MENUDO_FANSUB",
+  "className": "MenudoFansub",
+  "title": "Menudo Fansub",
+  "locale": "es",
+  "domain": "www.menudo-fansub.com",
+  "family": "FoolSlideParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "slide/directory/"
+  }
+ },
+ {
+  "id": "RAMAREADER",
+  "className": "Ramareader",
+  "title": "RamaReader",
+  "locale": "it",
+  "domain": "www.ramareader.it",
+  "family": "FoolSlideParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "read/directory/"
+  }
+ },
+ {
+  "id": "READNIFTEAM",
+  "className": "ReadNifteam",
+  "title": "ReadNifTeam",
+  "locale": "it",
+  "domain": "read-nifteam.info",
+  "family": "FoolSlideParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "slide/directory/"
+  }
+ },
+ {
+  "id": "SEINAGI",
+  "className": "Seinagi",
+  "title": "Seinagi",
+  "locale": "en",
+  "domain": "reader.seinagi.org.es",
+  "family": "FoolSlideParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HENTAISLAYER",
+  "className": "HentaiSlayer",
+  "title": "HentaiSlayer",
+  "locale": "ar",
+  "domain": "hentaislayer.net",
+  "family": "FuzzyDoodleParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "LELSCANVF",
+  "className": "LelScanVf",
+  "title": "LelScanFr",
+  "locale": "fr",
+  "domain": "lelscanfr.com",
+  "family": "FuzzyDoodleParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCYLLACOMICS",
+  "className": "ScyllaComics",
+  "title": "ScyllaComics",
+  "locale": "en",
+  "domain": "scyllacomics.xyz",
+  "family": "FuzzyDoodleParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DANKE",
+  "className": "Danke",
+  "title": "DankeFursLesen",
+  "locale": "en",
+  "domain": "danke.moe",
+  "family": "GuyaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GUYACUBARI",
+  "className": "GuyaCubari",
+  "title": "GuyaCubari",
+  "locale": "en",
+  "domain": "guya.cubari.moe",
+  "family": "GuyaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DAYCOMICS",
+  "className": "DayComics",
+  "title": "DayComics",
+  "locale": "en",
+  "domain": "daycomics.me/en",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HOTCOMICS",
+  "className": "HotComics",
+  "title": "HotComics",
+  "locale": "en",
+  "domain": "hotcomics.me/en",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSDE",
+  "className": "TooMicsDe",
+  "title": "TooMicsDe",
+  "locale": "de",
+  "domain": "toomics.com/de",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSEN",
+  "className": "TooMicsEn",
+  "title": "TooMicsEn",
+  "locale": "en",
+  "domain": "toomics.com/en",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSES",
+  "className": "TooMicsEs",
+  "title": "TooMicsEs",
+  "locale": "es",
+  "domain": "toomics.com/es",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSESLA",
+  "className": "TooMicsEsLa",
+  "title": "TooMicsEsLa",
+  "locale": "es",
+  "domain": "toomics.com/mx",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSFR",
+  "className": "TooMicsFr",
+  "title": "TooMicsFr",
+  "locale": "fr",
+  "domain": "toomics.com/fr",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSIT",
+  "className": "TooMicsIt",
+  "title": "TooMicsIt",
+  "locale": "it",
+  "domain": "toomics.com/it",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSJA",
+  "className": "TooMicsJa",
+  "title": "TooMicsJa",
+  "locale": "ja",
+  "domain": "toomics.com/ja",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSPT",
+  "className": "TooMicsPt",
+  "title": "TooMicsPt",
+  "locale": "pt",
+  "domain": "toomics.com/por",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSSC",
+  "className": "TooMicsSc",
+  "title": "TooMicsSc",
+  "locale": "zh",
+  "domain": "toomics.com/sc",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOOMICSTC",
+  "className": "TooMicsTc",
+  "title": "TooMicsTc",
+  "locale": "zh",
+  "domain": "toomics.com/tc",
+  "family": "HotComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "EZMANGA",
+  "className": "EzManga",
+  "title": "EzManga",
+  "locale": "en",
+  "domain": "ezmanga.org",
+  "family": "IkenParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HIVECOMIC",
+  "className": "HiveComic",
+  "title": "HiveComic",
+  "locale": "en",
+  "domain": "hivetoons.org",
+  "family": "IkenParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MAGUSMANGA",
+  "className": "MagusToon",
+  "title": "MagusToon",
+  "locale": "en",
+  "domain": "magustoon.org",
+  "family": "IkenParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NYXSCANS",
+  "className": "NyxScans",
+  "title": "Nyx Scans",
+  "locale": "en",
+  "domain": "nyxscans.com",
+  "family": "IkenParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "VORTEXSCANS",
+  "className": "VortexScans",
+  "title": "VortexScans",
+  "locale": "en",
+  "domain": "vortexscans.org",
+  "family": "IkenParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MERLINSCANS",
+  "className": "MerlinScans",
+  "title": "MerlinScans",
+  "locale": "tr",
+  "domain": "merlintoon.com",
+  "family": "InitMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAGNARSCANS",
+  "className": "Ragnarscans",
+  "title": "Ragnarscans",
+  "locale": "tr",
+  "domain": "ragnarscans.com",
+  "family": "InitMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCANS4U",
+  "className": "Scans4u",
+  "title": "4uScans",
+  "locale": "ar",
+  "domain": "4uscans.com",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "EDSCANLATION",
+  "className": "EdScanlation",
+  "title": "EdScanlation",
+  "locale": "fr",
+  "domain": "edscanlation.fr",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SURYASCANS",
+  "className": "SuryaScans",
+  "title": "GenzToon",
+  "locale": "en",
+  "domain": "genzupdates.com",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAISCANS",
+  "className": "RaiScans",
+  "title": "KenScans",
+  "locale": "en",
+  "domain": "kenscans.com",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "KEWNSCANS",
+  "className": "KewnScans",
+  "title": "KewnScans",
+  "locale": "en",
+  "domain": "kewnscans.org",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NECROSCANS",
+  "className": "NecroScans",
+  "title": "NecroScans",
+  "locale": "en",
+  "domain": "necroscans.com",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "REZOSCANS",
+  "className": "RezoScans",
+  "title": "RezoScans",
+  "locale": "en",
+  "domain": "rezoscans.com",
+  "family": "KeyoappParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LIKEMANGA",
+  "className": "LikeManga",
+  "title": "LikeManga",
+  "locale": "en",
+  "domain": "likemanga.ink",
+  "family": "LikeMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DOCTRUYEN5S",
+  "className": "DocTruyen5s",
+  "title": "DocTruyen5s",
+  "locale": "vi",
+  "domain": "manga.io.vn",
+  "family": "LilianaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAKOMA01",
+  "className": "MangaKoma01",
+  "title": "MangaKoma01",
+  "locale": "ja",
+  "domain": "mangakoma01.com",
+  "family": "LilianaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGASECT",
+  "className": "MangaSect",
+  "title": "MangaSect",
+  "locale": "en",
+  "domain": "mangasect.net",
+  "family": "LilianaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHUAGOLD",
+  "className": "ManhuaGold",
+  "title": "ManhuaGold",
+  "locale": "en",
+  "domain": "manhuagold.top",
+  "family": "LilianaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHUAPLUSORG",
+  "className": "ManhuaPlusOrg",
+  "title": "ManhuaPlus.org",
+  "locale": "en",
+  "domain": "manhuaplus.org",
+  "family": "LilianaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAW1001",
+  "className": "Raw1001",
+  "title": "Raw1001",
+  "locale": "ja",
+  "domain": "raw1001.net",
+  "family": "LilianaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ASQORG",
+  "className": "Asq",
+  "title": "3Asq",
+  "locale": "ar",
+  "domain": "3asq.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM، yyyy"
+  }
+ },
+ {
+  "id": "YAOIX3",
+  "className": "YaoiX3",
+  "title": "3XYaoi",
+  "locale": "pt",
+  "domain": "3xyaoi.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "bl/",
+   "datePattern": "dd/MM/yyyy",
+   "tagPrefix": "genero/"
+  }
+ },
+ {
+  "id": "ALONESCANLATOR",
+  "className": "AloneScanlator",
+  "title": "AloneScanlator",
+  "locale": "pt",
+  "domain": "alonescanlator.com.br",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ANISASCANS",
+  "className": "AnisaScans",
+  "title": "AnisaScans",
+  "locale": "en",
+  "domain": "anisascans.in",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd MMM, yyyy"
+  }
+ },
+ {
+  "id": "APENASMAISUMYAOI",
+  "className": "ApenasmaisumYaoi",
+  "title": "Apenasmaisum Yaoi",
+  "locale": "pt",
+  "domain": "apenasmaisumyaoi.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "APOLL_COMICS",
+  "className": "ApollComics",
+  "title": "ApollComics",
+  "locale": "es",
+  "domain": "apollcomics.es",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "AQUAMANGA",
+  "className": "AquaManga",
+  "title": "AquaManga",
+  "locale": "en",
+  "domain": "aquareader.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "ARABSHENTAI",
+  "className": "ArabsHentai",
+  "title": "Arabs Hentai",
+  "locale": "ar",
+  "domain": "arabshentai.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "manga/",
+   "datePattern": "yyyy-MM-dd",
+   "selectChapter": "#chapter-list a[href*='/manga/'], .oneshot-reader",
+   "selectPage": ".chapter_image img.wp-manga-chapter-img",
+   "selectDesc": "#manga-info .wp-content p",
+   "selectState": "#manga-info div b:contains(حالة المانجا)",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "ARABTOONS",
+  "className": "ArabToons",
+  "title": "ArabToons",
+  "locale": "ar",
+  "domain": "arabtoons.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd-MM-yyyy"
+  }
+ },
+ {
+  "id": "ARAZNOVEL",
+  "className": "ArazNovel",
+  "title": "ArazNovel",
+  "locale": "tr",
+  "domain": "araznovel.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy",
+   "postReq": true
+  }
+ },
+ {
+  "id": "ARTHUR_SCAN",
+  "className": "ArthurScan",
+  "title": "ArthurScan",
+  "locale": "pt",
+  "domain": "arthurscan.xyz",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ASURASCANS_US",
+  "className": "AsuraScansUs",
+  "title": "AsuraScans.us",
+  "locale": "en",
+  "domain": "asurascans.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "comics/",
+   "tagPrefix": "read-en-us-genre/"
+  }
+ },
+ {
+  "id": "ASURASCANSTR",
+  "className": "AsuraScansTR",
+  "title": "AsuraScansTR",
+  "locale": "tr",
+  "domain": "asurascans.com.tr",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "tagPrefix": "tur/"
+  }
+ },
+ {
+  "id": "BEGATRANSLATION",
+  "className": "BegaTranslation",
+  "title": "BegaTranslation",
+  "locale": "es",
+  "domain": "begatranslation.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "series/",
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "BEYONDTHEATARAXIA",
+  "className": "Beyondtheataraxia",
+  "title": "Beyond The Ataraxia",
+  "locale": "it",
+  "domain": "www.beyondtheataraxia.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "BOOKMANGA",
+  "className": "BookManga",
+  "title": "BookManga",
+  "locale": "en",
+  "domain": "bookmanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "BORUTOEXPLORER",
+  "className": "BorutoExplorer",
+  "title": "BorutoExplorer",
+  "locale": "pt",
+  "domain": "leitor.borutoexplorer.com.br",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "CAFECOMYAOI",
+  "className": "CafecomYaoi",
+  "title": "CafecomYaoi",
+  "locale": "pt",
+  "domain": "cafecomyaoi.com.br",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "CAT_300",
+  "className": "Cat300",
+  "title": "Cat300",
+  "locale": "th",
+  "domain": "cat-300.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMMM dd, yyyy"
+  }
+ },
+ {
+  "id": "HENTAICUBE",
+  "className": "HentaiCube",
+  "title": "CBHentai",
+  "locale": "vi",
+  "domain": "hentaicube.xyz",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy",
+   "postReq": true
+  }
+ },
+ {
+  "id": "COMICSVALLEY",
+  "className": "ComicsValley",
+  "title": "ComicsValley",
+  "locale": "en",
+  "domain": "comicsvalley.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "adult-comics/",
+   "datePattern": "dd/MM/yyyy",
+   "tagPrefix": "comic-genre/"
+  }
+ },
+ {
+  "id": "DIAMONDFANSUB",
+  "className": "DiamondFansub",
+  "title": "DiamondFansub",
+  "locale": "tr",
+  "domain": "diamondfansub.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "seri/",
+   "datePattern": "d MMMM",
+   "tagPrefix": "seri-turu/"
+  }
+ },
+ {
+  "id": "DOUJINZA",
+  "className": "Doujinza",
+  "title": "Doujinza",
+  "locale": "th",
+  "domain": "doujinza.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "doujin/",
+   "datePattern": "MMMM dd, yyyy",
+   "tagPrefix": "doujin-genre/",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "DRAGONTEA",
+  "className": "DragonTea",
+  "title": "DragonTea",
+  "locale": "en",
+  "domain": "dragontea.ink",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MM/dd/yyyy"
+  }
+ },
+ {
+  "id": "DRAGONTRANSLATIONORG",
+  "className": "DragonTranslationOrg",
+  "title": "DragonTranslation.org",
+  "locale": "es",
+  "domain": "dragontranslation.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "EMPERORSCAN",
+  "className": "EmperorScan",
+  "title": "EmperorScan",
+  "locale": "es",
+  "domain": "imperiomanhua.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMMM dd, yyyy",
+   "selectDesc": "div.summary_content div.post-content_item:has(h5:contains(Sinopsis)) div",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "ERO18X",
+  "className": "Ero18x",
+  "title": "Ero18x",
+  "locale": "all",
+  "domain": "ero18x.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MM/dd"
+  }
+ },
+ {
+  "id": "EUPHORIASCAN",
+  "className": "EuphoriaScan",
+  "title": "EuphoriaScan",
+  "locale": "pt",
+  "domain": "euphoriascan.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "FBSQUADS",
+  "className": "Fbsquads",
+  "title": "FbSquads",
+  "locale": "pt",
+  "domain": "fbsquadx.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "FENIXPROJECT",
+  "className": "FenixProject",
+  "title": "FenixProject",
+  "locale": "pt",
+  "domain": "fenixproject.site",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "FIRESCANS",
+  "className": "FireScans",
+  "title": "FireScans",
+  "locale": "en",
+  "domain": "firescans.xyz",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GARCIAMANGA",
+  "className": "GarciaManga",
+  "title": "GarciaManga",
+  "locale": "tr",
+  "domain": "garciamanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectPage": "img"
+  }
+ },
+ {
+  "id": "GDSCANS",
+  "className": "GdScans",
+  "title": "GdScans",
+  "locale": "en",
+  "domain": "gdscans.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "tagPrefix": "webtoon-genre/"
+  }
+ },
+ {
+  "id": "GEDECOMIX",
+  "className": "GedeComix",
+  "title": "GedeComix",
+  "locale": "en",
+  "domain": "gedecomix.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "porncomic/",
+   "tagPrefix": "comics-tag/"
+  }
+ },
+ {
+  "id": "GRABBER",
+  "className": "Grabber",
+  "title": "Grabber",
+  "locale": "en",
+  "domain": "grabber.zone",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "comics/",
+   "datePattern": "dd.MM.yyyy",
+   "tagPrefix": "type/"
+  }
+ },
+ {
+  "id": "HADESNOFANSUB",
+  "className": "HadesNoFansub",
+  "title": "HadesNoFansub",
+  "locale": "es",
+  "domain": "hadesnofansub.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HARMONYSCAN",
+  "className": "HarmonyScan",
+  "title": "HarmonyScan",
+  "locale": "fr",
+  "domain": "harmony-scan.fr",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HENTAIXCOMIC",
+  "className": "HentaixComic",
+  "title": "Hentai x Comic",
+  "locale": "en",
+  "domain": "hentaixcomic.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "HENTAIXDICKGIRL",
+  "className": "Hentaixdickgirl",
+  "title": "Hentai x Dickgirl",
+  "locale": "en",
+  "domain": "hentaixdickgirl.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "HENTAISCANTRADVF",
+  "className": "HentaiScantradVf",
+  "title": "Hentai-Scantrad",
+  "locale": "fr",
+  "domain": "hentai.scantrad-vf.cc",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "d MMMM, yyyy"
+  }
+ },
+ {
+  "id": "HENTAI_4FREE",
+  "className": "Hentai4Free",
+  "title": "Hentai4Free",
+  "locale": "en",
+  "domain": "hentai4free.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMMM dd, yyyy",
+   "tagPrefix": "hentai-tag/",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "HENTAIXYURI",
+  "className": "HentaixYuri",
+  "title": "HentaiXYuri",
+  "locale": "en",
+  "domain": "hentaixyuri.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "HENTAIZONE",
+  "className": "Hentaizone",
+  "title": "HentaiZone",
+  "locale": "fr",
+  "domain": "hentaizone.xyz",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "HERENSCAN",
+  "className": "HerenScan",
+  "title": "HerenScan",
+  "locale": "es",
+  "domain": "herenscan.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "HOTOON",
+  "className": "Holotoon",
+  "title": "Holotoon",
+  "locale": "id",
+  "domain": "01.holotoon.site",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "komik/",
+   "tagPrefix": "komik-genre/"
+  }
+ },
+ {
+  "id": "HWAGO",
+  "className": "Hwago",
+  "title": "Hwago",
+  "locale": "id",
+  "domain": "01.hwago.xyz",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "INFRAFANDUB",
+  "className": "Infrafandub",
+  "title": "InfraFandub",
+  "locale": "es",
+  "domain": "infrafandub.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "ISEKAISCAN",
+  "className": "IsekaiScan",
+  "title": "IsekaiScan.top",
+  "locale": "en",
+  "domain": "www.isekaiscan.top",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "latest-manga/",
+   "datePattern": "MMMM d, HH:mm",
+   "tagPrefix": "mangas/"
+  }
+ },
+ {
+  "id": "KISSMANGA",
+  "className": "KissManga",
+  "title": "KissManga",
+  "locale": "en",
+  "domain": "kissmanga.in",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "mangalist/",
+   "datePattern": "MMMM dd, yyyy"
+  }
+ },
+ {
+  "id": "KUNMANGA",
+  "className": "KunManga",
+  "title": "KunManga",
+  "locale": "en",
+  "domain": "kunmanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "KNIGHTNOSCANLATION",
+  "className": "KnightnoScanlation",
+  "title": "Lector KNS",
+  "locale": "es",
+  "domain": "lectorknight.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "sr/",
+   "tagPrefix": "generos/"
+  }
+ },
+ {
+  "id": "LEGENDSCANLATIONS",
+  "className": "LegendScanlations",
+  "title": "LegendScanlations",
+  "locale": "es",
+  "domain": "escaneodeleyendas.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "LEITORKAMISAMA",
+  "className": "LeitorKamisama",
+  "title": "LeitorKamisama",
+  "locale": "pt",
+  "domain": "leitor.kamisama.com.br",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LEKMANGAORG",
+  "className": "LekMangaOrg",
+  "title": "LekManga.org",
+  "locale": "ar",
+  "domain": "lekmanga.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "readcomics/"
+  }
+ },
+ {
+  "id": "LERMANGAS",
+  "className": "Lermangas",
+  "title": "Lermangas",
+  "locale": "pt",
+  "domain": "lermangas.me",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd 'de' MMMMM 'de' yyyy"
+  }
+ },
+ {
+  "id": "LIKEMANGANET",
+  "className": "LikeMangaNet",
+  "title": "Like-Manga.net",
+  "locale": "ar",
+  "domain": "like-manga.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LILYMANGA",
+  "className": "LilyManga",
+  "title": "LilyManga",
+  "locale": "en",
+  "domain": "lilymanga.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "ys/",
+   "datePattern": "yyyy-MM-dd",
+   "tagPrefix": "ys-genre/"
+  }
+ },
+ {
+  "id": "LIMBOSCAN",
+  "className": "LimboScan",
+  "title": "LimboScan",
+  "locale": "pt",
+  "domain": "limboscan.com.br",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "obras/",
+   "tagPrefix": "obras-genre/"
+  }
+ },
+ {
+  "id": "LUMOSKOMIK",
+  "className": "LumosKomik",
+  "title": "LumosKomik",
+  "locale": "id",
+  "domain": "02.lumosgg.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "komik/",
+   "datePattern": "dd MMMM yyyy",
+   "tagPrefix": "genre/"
+  }
+ },
+ {
+  "id": "LUNASCANS",
+  "className": "LunaScans",
+  "title": "LunaScans",
+  "locale": "tr",
+  "domain": "tuhafscans.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd MMMM yyyy",
+   "postReq": true
+  }
+ },
+ {
+  "id": "MADARADEX",
+  "className": "MadaraDex",
+  "title": "MadaraDex",
+  "locale": "en",
+  "domain": "madaradex.org",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "title/",
+   "tagPrefix": "genre/",
+   "postReq": true
+  }
+ },
+ {
+  "id": "MANGASTARZ",
+  "className": "MangaStarz",
+  "title": "Manga-Starz",
+  "locale": "ar",
+  "domain": "manga-starz.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM، yyyy",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "MANGA1ST",
+  "className": "Manga1st",
+  "title": "Manga1st",
+  "locale": "en",
+  "domain": "manga1st.online",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM، yyyy"
+  }
+ },
+ {
+  "id": "MANGA_CRAB",
+  "className": "MangaCrab",
+  "title": "MangaCrab",
+  "locale": "es",
+  "domain": "mangacrab.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "series/",
+   "datePattern": "dd/MM/yyyy",
+   "tagPrefix": "manga-genero/",
+   "selectChapter": "div.listing-chapters_wrap > ul > li",
+   "selectDesc": "div.c-page__content div.modal-contenido p"
+  }
+ },
+ {
+  "id": "MANGACRAZY",
+  "className": "MangaCrazy",
+  "title": "MangaCrazy",
+  "locale": "all",
+  "domain": "mangacrazy.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "MANGA_DISTRICT",
+  "className": "MangaDistrict",
+  "title": "MangaDistrict",
+  "locale": "en",
+  "domain": "mangadistrict.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "tagPrefix": "publication-genre/"
+  }
+ },
+ {
+  "id": "MANGAECLIPSE",
+  "className": "MangaEclipse",
+  "title": "MangaEclipse",
+  "locale": "en",
+  "domain": "mangaeclipse.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAFASTNET",
+  "className": "MangaFastNet",
+  "title": "MangaFast.net",
+  "locale": "en",
+  "domain": "manhuafast.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "MANGAFORFREE",
+  "className": "MangaForFree",
+  "title": "MangaForFree",
+  "locale": "en",
+  "domain": "mangaforfree.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "MANGAFOXFULL",
+  "className": "MangaFoxFull",
+  "title": "MangaFoxFull",
+  "locale": "en",
+  "domain": "mangafoxfull.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "MANGAGG",
+  "className": "Mangagg",
+  "title": "MangaGg",
+  "locale": "en",
+  "domain": "mangagg.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MM/dd/yyyy",
+   "tagPrefix": "genre/"
+  }
+ },
+ {
+  "id": "MANGAHONA",
+  "className": "MangaHona",
+  "title": "MangaHona",
+  "locale": "pl",
+  "domain": "mangahona.pl",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "yyyy-MM-dd"
+  }
+ },
+ {
+  "id": "MANGAHUB",
+  "className": "MangaHub",
+  "title": "MangaHub",
+  "locale": "fr",
+  "domain": "mangahub.fr",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "MANGALC",
+  "className": "MangaLc",
+  "title": "MangaLc",
+  "locale": "th",
+  "domain": "manga-lc.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectPage": "img"
+  }
+ },
+ {
+  "id": "MANGA_MANHUA",
+  "className": "MangaManhua",
+  "title": "MangaManhua",
+  "locale": "en",
+  "domain": "mangaonlineteam.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAONLINE_BLOG",
+  "className": "MangaOnline",
+  "title": "MangaOnline",
+  "locale": "pt",
+  "domain": "mangaonline.blog",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAONLINETEAM",
+  "className": "MangaOnlineTeam",
+  "title": "MangaOnlineTeam",
+  "locale": "en",
+  "domain": "mangaonlineteam.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAOWL_IO",
+  "className": "MangaOwlIo",
+  "title": "MangaOwl.io",
+  "locale": "en",
+  "domain": "mangaowl.io",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "mangaowl-all/"
+  }
+ },
+ {
+  "id": "MANGAREAD",
+  "className": "MangaRead",
+  "title": "MangaRead",
+  "locale": "en",
+  "domain": "www.mangaread.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd.MM.yyyy",
+   "tagPrefix": "genres/"
+  }
+ },
+ {
+  "id": "MANGA_SCANTRAD",
+  "className": "MangaScantrad",
+  "title": "MangaScantrad.io",
+  "locale": "fr",
+  "domain": "manga-scantrad.io",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "MANGASEHRI",
+  "className": "Mangasehri",
+  "title": "MangaSehri.com",
+  "locale": "tr",
+  "domain": "manga-sehri.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "MANGASEHRINET",
+  "className": "MangaSehriNet",
+  "title": "MangaSehri.net",
+  "locale": "tr",
+  "domain": "manga-sehri.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd MMMM yyyy"
+  }
+ },
+ {
+  "id": "MANGASNOSEKAI",
+  "className": "MangasNoSekai",
+  "title": "MangasNoSekai",
+  "locale": "es",
+  "domain": "mangasnosekai.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGASORIGINES",
+  "className": "MangasOrigines",
+  "title": "MangasOrigines.fr",
+  "locale": "fr",
+  "domain": "mangas-origines.fr",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "oeuvre/",
+   "datePattern": "dd/MM/yyyy",
+   "tagPrefix": "manga-genres/"
+  }
+ },
+ {
+  "id": "MANGASUSHI",
+  "className": "MangaSushi",
+  "title": "MangaSushi",
+  "locale": "en",
+  "domain": "mangasushi.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAWOW",
+  "className": "MangaWow",
+  "title": "MangaWow",
+  "locale": "tr",
+  "domain": "mangawow.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "MANGAZIN",
+  "className": "MangaZin",
+  "title": "MangaZin",
+  "locale": "en",
+  "domain": "mangazin.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHASTRO",
+  "className": "Manhastro",
+  "title": "Manhastro",
+  "locale": "pt",
+  "domain": "manhastro.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "lermanga/",
+   "tagPrefix": "genre/"
+  }
+ },
+ {
+  "id": "MANHATIC",
+  "className": "Manhatic",
+  "title": "Manhatic",
+  "locale": "ar",
+  "domain": "manhatic.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "MANHUABUG",
+  "className": "Manhuabug",
+  "title": "ManhuaBug",
+  "locale": "th",
+  "domain": "www.manhuabug.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectPage": "img"
+  }
+ },
+ {
+  "id": "MANHUAHOT",
+  "className": "Manhuahot",
+  "title": "ManhuaHot",
+  "locale": "en",
+  "domain": "manhuahot.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHUAPLUS",
+  "className": "Manhuaplus",
+  "title": "ManhuaPlus",
+  "locale": "en",
+  "domain": "manhuaplus.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "TOPMANHUA",
+  "className": "TopManhua",
+  "title": "ManhuaTop",
+  "locale": "en",
+  "domain": "manhuatop.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "manhua/",
+   "datePattern": "MM/dd/yyyy",
+   "tagPrefix": "manhua-genre/"
+  }
+ },
+ {
+  "id": "MANHUAZONGHE",
+  "className": "ManhuaZonghe",
+  "title": "ManhuaZonghe",
+  "locale": "en",
+  "domain": "www.manhuazonghe.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "manhua/",
+   "tagPrefix": "genre/"
+  }
+ },
+ {
+  "id": "MANHWA_ES",
+  "className": "ManhwaEs",
+  "title": "Manhwa-Es",
+  "locale": "es",
+  "domain": "manhwa-es.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MM/dd"
+  }
+ },
+ {
+  "id": "MANHWABREAKUP",
+  "className": "ManhwaBreakup",
+  "title": "ManhwaBreakup",
+  "locale": "th",
+  "domain": "www.manhwabreakup.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMMM dd, yyyy",
+   "selectPage": "img, div.displayImage + script:containsData(p,a,c,k,e,d)",
+   "postReq": false,
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "MANHWACLAN",
+  "className": "ManhwaClan",
+  "title": "ManhwaClan",
+  "locale": "en",
+  "domain": "manhwaclan.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMMM dd, yyyy"
+  }
+ },
+ {
+  "id": "MANHWADEN",
+  "className": "Manhwaden",
+  "title": "ManhwaDen",
+  "locale": "en",
+  "domain": "www.manhwaden.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "selectPage": "p img[src]"
+  }
+ },
+ {
+  "id": "MANHWAFULL",
+  "className": "ManhwaFull",
+  "title": "ManhwaFull",
+  "locale": "en",
+  "domain": "manhwafull.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "manga-all-manhwa/",
+   "datePattern": "MM/dd/yyyy"
+  }
+ },
+ {
+  "id": "MANHWALATINO",
+  "className": "ManhwaLatino",
+  "title": "ManhwaLatino",
+  "locale": "es",
+  "domain": "manhwa-latino.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MM/dd",
+   "selectPage": "div.page-break img.wp-manga-chapter-img"
+  }
+ },
+ {
+  "id": "MANHWAONLINE",
+  "className": "ManhwaOnline",
+  "title": "ManhwaOnline",
+  "locale": "es",
+  "domain": "manhwa-online.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMMM dd, yyyy"
+  }
+ },
+ {
+  "id": "MANHWARAW",
+  "className": "ManhwaRaw",
+  "title": "ManhwaRaw",
+  "locale": "all",
+  "domain": "manhwa-raw.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MM/dd"
+  }
+ },
+ {
+  "id": "MANHWASCO",
+  "className": "Manhwasco",
+  "title": "ManhwaSco",
+  "locale": "en",
+  "domain": "manhwasco.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHWATOP",
+  "className": "ManhwaTop",
+  "title": "ManhwaTop",
+  "locale": "en",
+  "domain": "manhwatop.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "MANHWAZ",
+  "className": "Manhwaz",
+  "title": "ManhwaZ",
+  "locale": "en",
+  "domain": "manhwaz.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "genre/manhwa",
+   "tagPrefix": "genre/",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "MARMOTA",
+  "className": "Marmota",
+  "title": "Marmota",
+  "locale": "es",
+  "domain": "marmota.me",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "comic/",
+   "datePattern": "d 'de' MMMMM 'de' yyyy",
+   "tagPrefix": "genero/"
+  }
+ },
+ {
+  "id": "MINITWOSCAN",
+  "className": "MiniTwoScan",
+  "title": "MiniTwoScan",
+  "locale": "pt",
+  "domain": "minitwoscan.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "postReq": true,
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "MUGIMANGA",
+  "className": "MugiManga",
+  "title": "MugiManga",
+  "locale": "tr",
+  "domain": "mugimanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "MUGIWARASOFICIAL",
+  "className": "MugiwarasOficial",
+  "title": "MugiwarasOficial",
+  "locale": "pt",
+  "domain": "mugiwarasoficial.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MUNDO_MANHWA",
+  "className": "MundoManhwa",
+  "title": "MundoManhwa",
+  "locale": "es",
+  "domain": "mundomanhwa.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NEROXUS",
+  "className": "Neroxus",
+  "title": "Neroxus",
+  "locale": "pt",
+  "domain": "neroxus.com.br",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "NIJITRANSLATIONS",
+  "className": "NijiTranslations",
+  "title": "Niji Translations",
+  "locale": "ar",
+  "domain": "niji-translations.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "NINJASCAN",
+  "className": "NinjaScan",
+  "title": "NinjaComics",
+  "locale": "pt",
+  "domain": "ninjacomics.xyz",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NITROMANGA",
+  "className": "NitroManga",
+  "title": "NitroManga",
+  "locale": "en",
+  "domain": "nitroscans.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NOBLESSETRANSLATIONS",
+  "className": "NoblesseTranslations",
+  "title": "NoblesseTranslations",
+  "locale": "es",
+  "domain": "nobledicion.yoveo.xyz",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NOCSUMMER",
+  "className": "Nocsummer",
+  "title": "NocturneSummer",
+  "locale": "pt",
+  "domain": "nocfsb.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd 'de' MMMMM 'de' yyyy"
+  }
+ },
+ {
+  "id": "NOVELCROW",
+  "className": "Novelcrow",
+  "title": "NovelCrow",
+  "locale": "en",
+  "domain": "novelcrow.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "tagPrefix": "comic-genre/"
+  }
+ },
+ {
+  "id": "PANTHEONSCAN",
+  "className": "PantheonScan",
+  "title": "PantheonScan.com",
+  "locale": "fr",
+  "domain": "pantheon-scan.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "PETROTECHSOCIETY",
+  "className": "PetrotechSociety",
+  "title": "Petrotech Society",
+  "locale": "en",
+  "domain": "www.petrotechsociety.org",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "QUAANHDAOCUTEO",
+  "className": "Quaanhdaocuteo",
+  "title": "Quả Anh Đào Cuteo",
+  "locale": "vi",
+  "domain": "qadcuteo.cc",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy",
+   "selectPage": "p img"
+  }
+ },
+ {
+  "id": "RAGNAROKSCANLATION",
+  "className": "RagnarokScanlation",
+  "title": "RagnarokScanlation",
+  "locale": "es",
+  "domain": "ragnarokscanlation.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAIJINSCANS",
+  "className": "RaijinScans",
+  "title": "RaijinScans",
+  "locale": "fr",
+  "domain": "raijin-scans.fr",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy",
+   "tagPrefix": "genre/",
+   "selectChapter": "ul.scroll-sm li.item",
+   "selectPage": "div.protected-image-data",
+   "selectDesc": "div.description-content",
+   "selectState": "div.stat-item:has(span:contains(État du titre)) span.manga",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "RESETSCANS",
+  "className": "ResetScans",
+  "title": "Resetscans",
+  "locale": "en",
+  "domain": "reset-scans.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RICHTOSCAN",
+  "className": "RichtoScan",
+  "title": "RichtoScan",
+  "locale": "es",
+  "domain": "r1.richtoon.top",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "tagPrefix": "manga-generos/"
+  }
+ },
+ {
+  "id": "ROCKSMANGA",
+  "className": "RocksManga",
+  "title": "RocksManga",
+  "locale": "ar",
+  "domain": "rocksmanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d MMMM yyyy",
+   "selectChapter": "ul.scroll-sm li.item",
+   "selectPage": "img",
+   "selectDesc": ".description",
+   "withoutAjax": false
+  }
+ },
+ {
+  "id": "ROMANTIKMANGA",
+  "className": "RomantikManga",
+  "title": "RomantikManga",
+  "locale": "tr",
+  "domain": "webtoonhatti.club",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RUYAMANGA",
+  "className": "RuyaManga",
+  "title": "RuyaManga",
+  "locale": "tr",
+  "domain": "ruyamanga.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy",
+   "tagPrefix": "manga-kategori/"
+  }
+ },
+ {
+  "id": "SAMURAISCAN",
+  "className": "SamuraiScan",
+  "title": "SamuraiScan",
+  "locale": "es",
+  "domain": "samuraiscan.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "read/"
+  }
+ },
+ {
+  "id": "SHIBAMANGA",
+  "className": "ShibaManga",
+  "title": "ShibaManga",
+  "locale": "en",
+  "domain": "shibamanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MM/dd/yyyy"
+  }
+ },
+ {
+  "id": "SLEEPYTRANSLATIONS",
+  "className": "SleepyTranslations",
+  "title": "Sleepy Translations",
+  "locale": "en",
+  "domain": "sleepytranslations.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "series/",
+   "tagPrefix": "genre/"
+  }
+ },
+ {
+  "id": "TANKOUHENTAI",
+  "className": "TankouHentai",
+  "title": "TankouHentai",
+  "locale": "pt",
+  "domain": "tankouhentai.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "TERRITORIOLEAL",
+  "className": "TerritorioLeal",
+  "title": "TerritorioLeal",
+  "locale": "es",
+  "domain": "territorioleal.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "d 'de' MMMM 'de' yyyy"
+  }
+ },
+ {
+  "id": "THEBLANK",
+  "className": "TheBlank",
+  "title": "TheBlank",
+  "locale": "en",
+  "domain": "theblank.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "TILKISCANS",
+  "className": "TilkiScans",
+  "title": "TilkiScans",
+  "locale": "tr",
+  "domain": "www.tilkiscans.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "MANGACLASH",
+  "className": "Mangaclash",
+  "title": "ToonClash",
+  "locale": "en",
+  "domain": "toonclash.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MM/dd/yyyy",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "TOONFR",
+  "className": "ToonFr",
+  "title": "ToonFr",
+  "locale": "fr",
+  "domain": "toonfr.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "webtoon/",
+   "datePattern": "MMM d",
+   "tagPrefix": "webtoon-genre/"
+  }
+ },
+ {
+  "id": "TOONGOD",
+  "className": "ToonGod",
+  "title": "ToonGod",
+  "locale": "en",
+  "domain": "www.toongod.org",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "webtoon/",
+   "datePattern": "d MMM yyyy",
+   "tagPrefix": "webtoon-genre/",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "TOONILY",
+  "className": "Toonily",
+  "title": "Toonily",
+  "locale": "en",
+  "domain": "toonily.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "webtoon/",
+   "datePattern": "MMMM dd, yyyy",
+   "tagPrefix": "webtoon-genre/"
+  }
+ },
+ {
+  "id": "TOONIZY",
+  "className": "Toonizy",
+  "title": "Toonizy",
+  "locale": "en",
+  "domain": "toonizy.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "webtoon/",
+   "datePattern": "MMM d, yy"
+  }
+ },
+ {
+  "id": "TOPCOMICPORNO",
+  "className": "TopComicPorno",
+  "title": "TopComicPorno",
+  "locale": "es",
+  "domain": "topcomicporno.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM dd, yy"
+  }
+ },
+ {
+  "id": "TORTUGACEVIRI",
+  "className": "TortugaCeviri",
+  "title": "TortugaCeviri",
+  "locale": "tr",
+  "domain": "tortugaceviri.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TRITINIA",
+  "className": "Tritinia",
+  "title": "Tritinia",
+  "locale": "en",
+  "domain": "tritinia.org",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TRMANGAOKU",
+  "className": "TrMangaOku",
+  "title": "TrMangaOku",
+  "locale": "tr",
+  "domain": "trmangaoku.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "tagPrefix": "tur/"
+  }
+ },
+ {
+  "id": "TRUYENTRANHDAMMYY",
+  "className": "TruyenTranhDamMyy",
+  "title": "Truyện Tranh Đam Mỹ",
+  "locale": "vi",
+  "domain": "truyentranhdammyy.site",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "postReq": true
+  }
+ },
+ {
+  "id": "UTOON",
+  "className": "UToon",
+  "title": "UToon",
+  "locale": "en",
+  "domain": "utoon.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd MMM"
+  }
+ },
+ {
+  "id": "WEBDEXSCANS",
+  "className": "WebDexScans",
+  "title": "WebDexScans",
+  "locale": "en",
+  "domain": "webdexscans.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "WEBTOONXYZ",
+  "className": "WebtoonXyz",
+  "title": "Webtoon.xyz",
+  "locale": "en",
+  "domain": "www.webtoon.xyz",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "read/",
+   "datePattern": "d MMM yyyy",
+   "tagPrefix": "webtoon-genre/"
+  }
+ },
+ {
+  "id": "WEBTOONEMPIRE",
+  "className": "WebtoonEmpire",
+  "title": "WebtoonEmpire",
+  "locale": "ar",
+  "domain": "webtoonempire-bl.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "webtoon/",
+   "datePattern": "d MMMM، yyyy",
+   "withoutAjax": true
+  }
+ },
+ {
+  "id": "WEBTOONHATTI",
+  "className": "Webtoonhatti",
+  "title": "WebtoonHatti",
+  "locale": "tr",
+  "domain": "webtoonhatti.club",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "webtoon/",
+   "datePattern": "d MMMM",
+   "tagPrefix": "webtoon-tur/"
+  }
+ },
+ {
+  "id": "WHALEMANGA",
+  "className": "WhaleManga",
+  "title": "WhaleManga",
+  "locale": "en",
+  "domain": "whalemanga.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "XMANHWA",
+  "className": "XManhwa",
+  "title": "XManhwa",
+  "locale": "id",
+  "domain": "www.manhwaden.com",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "selectPage": "img"
+  }
+ },
+ {
+  "id": "YAKSHACOMICS",
+  "className": "YakshaComics",
+  "title": "YakshaComics",
+  "locale": "en",
+  "domain": "yakshacomics.com",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectDesc": "div.description-summary div.summary__content h3 + p, "
+  }
+ },
+ {
+  "id": "YAOIMANGA",
+  "className": "YaoiManga",
+  "title": "YaoiManga",
+  "locale": "es",
+  "domain": "yaoimanga.es",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "YAOIMANGAOKU",
+  "className": "YaoiMangaOku",
+  "title": "YaoiMangaOku",
+  "locale": "tr",
+  "domain": "yaoimangaoku.net",
+  "family": "MadaraParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "d MMMM yyyy"
+  }
+ },
+ {
+  "id": "ZINCHANMANGA_NET",
+  "className": "ZinchanMangaNet",
+  "title": "ZinchanManga.net",
+  "locale": "en",
+  "domain": "zinchangmanga.net",
+  "family": "MadaraParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHUASCAN",
+  "className": "ManhuaScan",
+  "title": "kaliscan.io",
+  "locale": "en",
+  "domain": "kaliscan.io",
+  "family": "MadthemeParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectChapter": "#chapter-list > li, #chapter-list-inner .chapter-list > li",
+   "selectDesc": ".summary .content, .summary .content ~ p"
+  }
+ },
+ {
+  "id": "MANGACUTE",
+  "className": "MangaCute",
+  "title": "MangaCute",
+  "locale": "en",
+  "domain": "mangacute.com",
+  "family": "MadthemeParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAFOREST",
+  "className": "MangaForest",
+  "title": "MangaForest",
+  "locale": "en",
+  "domain": "mangaforest.me",
+  "family": "MadthemeParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAJINX",
+  "className": "MangaJinx",
+  "title": "MangaJinx",
+  "locale": "en",
+  "domain": "mgjinx.com",
+  "family": "MadthemeParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "search"
+  }
+ },
+ {
+  "id": "MANGAPUMA",
+  "className": "MangaPuma",
+  "title": "MangaPuma",
+  "locale": "en",
+  "domain": "mangapuma.com",
+  "family": "MadthemeParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAXYZ",
+  "className": "Mangaxyz",
+  "title": "MangaXyz",
+  "locale": "en",
+  "domain": "mangaxyz.com",
+  "family": "MadthemeParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ARCRELIGHT",
+  "className": "ArcRelight",
+  "title": "Arc-Relight",
+  "locale": "en",
+  "domain": "arc-relight.com",
+  "family": "MangAdventureParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ASSORTEDSCANS",
+  "className": "AssortedScans",
+  "title": "AssortedScans",
+  "locale": "en",
+  "domain": "assortedscans.com",
+  "family": "MangAdventureParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ADONISFANSUB",
+  "className": "AdonisFansub",
+  "title": "AdonisFansub",
+  "locale": "tr",
+  "domain": "manga.adonisfansub.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ALTERKAISCANS",
+  "className": "AlterkaiScans",
+  "title": "AlterkaiScans",
+  "locale": "id",
+  "domain": "alterkaiscans.my.id",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "APKOMIK",
+  "className": "Apkomik",
+  "title": "Apkomik",
+  "locale": "id",
+  "domain": "01.apkomik.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ARAREASCANS",
+  "className": "ArAreaScans",
+  "title": "ArAreaScans",
+  "locale": "ar",
+  "domain": "ar.kenmanga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ARCURAFANSUB",
+  "className": "ArcuraFansub",
+  "title": "ArcuraFansub",
+  "locale": "tr",
+  "domain": "arcurafansub.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/seri"
+  }
+ },
+ {
+  "id": "AREASCANS",
+  "className": "AreaScans",
+  "title": "AreaScans",
+  "locale": "ar",
+  "domain": "ar.kenmanga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ARENASCANS",
+  "className": "ArenaScans",
+  "title": "Arenascans",
+  "locale": "en",
+  "domain": "arenascan.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ASIALOTUSS",
+  "className": "AsiaLotuss",
+  "title": "AsiaLotuss",
+  "locale": "es",
+  "domain": "asialotuss.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "BACAKOMIK",
+  "className": "BacaKomik",
+  "title": "BacaKomik",
+  "locale": "id",
+  "domain": "bacakomik.my",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/daftar-komik",
+   "selectMangaList": "div.animepost",
+   "selectMangaListImg": "div.limit img",
+   "selectMangaListTitle": ".animposx .tt h4",
+   "selectChapter": "#chapter_list li"
+  }
+ },
+ {
+  "id": "COSMIC_SCANS",
+  "className": "CosmicScans",
+  "title": "CosmicScans.id",
+  "locale": "id",
+  "domain": "lc1.cosmicscans.to",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "CULTUREDWORKS",
+  "className": "CulturedWorks",
+  "title": "CulturedWorks",
+  "locale": "en",
+  "domain": "culturedworks.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectMangaList": ".listupd .bs .bsx"
+  }
+ },
+ {
+  "id": "DOJING",
+  "className": "Dojing",
+  "title": "Dojing",
+  "locale": "id",
+  "domain": "dojing.net",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "DOUJIN69",
+  "className": "Doujin69",
+  "title": "Doujin69",
+  "locale": "th",
+  "domain": "doujin69.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/doujin"
+  }
+ },
+ {
+  "id": "DOUJINKU",
+  "className": "DoujinKu",
+  "title": "DoujinKu",
+  "locale": "id",
+  "domain": "doujinku.org",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "ECCHIDOUJIN",
+  "className": "EcchiDoujin",
+  "title": "EcchiDoujin",
+  "locale": "th",
+  "domain": "ecchi-doujin.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/doujin"
+  }
+ },
+ {
+  "id": "ELFTOON",
+  "className": "Elftoon",
+  "title": "Elftoon",
+  "locale": "en",
+  "domain": "elftoon.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ENTHUNDERSCANS",
+  "className": "EnThunderScans",
+  "title": "EnThunderScans",
+  "locale": "en",
+  "domain": "en-thunderscans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/comics"
+  }
+ },
+ {
+  "id": "EROSSCANS",
+  "className": "ErosScans",
+  "title": "ErosScans",
+  "locale": "en",
+  "domain": "erosxscans.xyz",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "EVILMANGA",
+  "className": "EvilManga",
+  "title": "EvilManga",
+  "locale": "cs",
+  "domain": "evil-manga.eu",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "d MMMM, yyyy"
+  }
+ },
+ {
+  "id": "GAFELAND",
+  "className": "Gafeland",
+  "title": "Gafeland",
+  "locale": "tr",
+  "domain": "www.gafeland.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GAIATOON",
+  "className": "GaiaToon",
+  "title": "GaiaToon",
+  "locale": "tr",
+  "domain": "gaiatoon.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GOLGEBAHCESI",
+  "className": "Golgebahcesi",
+  "title": "GolgeBahcesi",
+  "locale": "tr",
+  "domain": "golgebahcesi.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HENTAIREADER",
+  "className": "HentaiReader",
+  "title": "HentaiReader",
+  "locale": "es",
+  "domain": "hentaireader.org",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/tipo/all",
+   "selectChapter": ".releases"
+  }
+ },
+ {
+  "id": "IZANAMISCANS",
+  "className": "IzanamiScans",
+  "title": "IzanamiScans",
+  "locale": "id",
+  "domain": "izanamiscans.my.id",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "KANZENIN",
+  "className": "Kanzenin",
+  "title": "Kanzenin",
+  "locale": "id",
+  "domain": "kanzenin.info",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "FURYMANGA",
+  "className": "FuryManga",
+  "title": "KingOfScans",
+  "locale": "en",
+  "domain": "myshojo.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/comics"
+  }
+ },
+ {
+  "id": "KOFISCANS",
+  "className": "KofiScans",
+  "title": "KofiScans",
+  "locale": "id",
+  "domain": "isekaikomik.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "KOMBATCH",
+  "className": "KomBatch",
+  "title": "KomBatch",
+  "locale": "id",
+  "domain": "kombatch.cc",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "MANHWAINDOICU",
+  "className": "ManhwaIndoIcu",
+  "title": "KomikCinta",
+  "locale": "id",
+  "domain": "komikdewasa.art",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/komik"
+  }
+ },
+ {
+  "id": "KOMIKDEWASA_ONLINE",
+  "className": "KomikDewasa",
+  "title": "KomikDewasa.Online",
+  "locale": "id",
+  "domain": "komikdewasa.art",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "KOMIKMAMA",
+  "className": "KomikMama",
+  "title": "KomikMama",
+  "locale": "id",
+  "domain": "komikmama.online",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/komik"
+  }
+ },
+ {
+  "id": "KOMIKPOI",
+  "className": "KomikPoi",
+  "title": "KomikPoi",
+  "locale": "id",
+  "domain": "komikpoi.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "KOMIKSTATION",
+  "className": "Komikstation",
+  "title": "KomikStation",
+  "locale": "id",
+  "domain": "komikstation.org",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "KOMIKTAP",
+  "className": "KomikTapParser",
+  "title": "KomikTap",
+  "locale": "id",
+  "domain": "komiktap.info",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "KOMIKU",
+  "className": "Komiku",
+  "title": "Komiku",
+  "locale": "id",
+  "domain": "komiku.org",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/manga/",
+   "datePattern": "dd/MM/yyyy",
+   "selectMangaList": "div.bge",
+   "selectMangaListImg": "div.bgei img",
+   "selectMangaListTitle": "div.kan h3",
+   "selectChapter": "#Daftar_Chapter tr:has(td.judulseries)",
+   "selectPage": "#Baca_Komik img"
+  }
+ },
+ {
+  "id": "LAMIMANGA",
+  "className": "LamiManga",
+  "title": "LamiManga",
+  "locale": "th",
+  "domain": "mangalami.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LECTORHENTAI",
+  "className": "LectorHentai",
+  "title": "LectorHentai",
+  "locale": "es",
+  "domain": "lectorhentai.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/tipo/all",
+   "selectChapter": ".releases"
+  }
+ },
+ {
+  "id": "MIAUSCAN",
+  "className": "MiauScan",
+  "title": "LectorMiau",
+  "locale": "es",
+  "domain": "leemiau.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LELMANGA",
+  "className": "LelManga",
+  "title": "LelManga",
+  "locale": "fr",
+  "domain": "www.lelmanga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LIANSCANS",
+  "className": "Lianscans",
+  "title": "LianScans",
+  "locale": "id",
+  "domain": "www.lianscans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "LUVYAA",
+  "className": "Luvyaar",
+  "title": "Luvyaa",
+  "locale": "id",
+  "domain": "v4.luvyaa.co",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "MAKIMAAAAA",
+  "className": "Makimaaaaa",
+  "title": "Makimaaaaa",
+  "locale": "th",
+  "domain": "makimaaaaa.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGA168",
+  "className": "Manga168",
+  "title": "Manga168",
+  "locale": "th",
+  "domain": "manga168.net",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "MANGA689",
+  "className": "Manga689",
+  "title": "Manga689",
+  "locale": "th",
+  "domain": "manga689.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/read"
+  }
+ },
+ {
+  "id": "MANGAKIMI",
+  "className": "MangaKimi",
+  "title": "MangaKimi",
+  "locale": "th",
+  "domain": "www.mangakimi.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGASHIINA",
+  "className": "MangaShiina",
+  "title": "MangaMukai.com",
+  "locale": "es",
+  "domain": "mangamukai.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGASUSUKU",
+  "className": "MangaSusuku",
+  "title": "MangaSusuku",
+  "locale": "id",
+  "domain": "mangasusuku.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/komik",
+   "datePattern": "MMM d, yyyy",
+   "isNetShieldProtected": true
+  }
+ },
+ {
+  "id": "MANGATX_CC",
+  "className": "MangaTxCc",
+  "title": "MangaTx.cc",
+  "locale": "en",
+  "domain": "mangatx.cc",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/manga-list",
+   "datePattern": "dd-MM-yyyy"
+  }
+ },
+ {
+  "id": "MANHUASCANUS",
+  "className": "ManhuaScanUs",
+  "title": "ManhuaScan.Us",
+  "locale": "en",
+  "domain": "manhuascan.us",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "listUrl": "/manga-list",
+   "datePattern": "dd-MM-yyyy"
+  }
+ },
+ {
+  "id": "MANHWAINDO",
+  "className": "ManhwaIndoParser",
+  "title": "ManhwaIndo",
+  "locale": "id",
+  "domain": "www.manhwaindo.my",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/series",
+   "selectMangaList": "div.bs",
+   "selectMangaListImg": "img",
+   "selectMangaListTitle": ".tt",
+   "selectChapter": "#chapterlist li",
+   "selectPage": "#readerarea img"
+  }
+ },
+ {
+  "id": "MANHWALAND",
+  "className": "ManhwaLand",
+  "title": "ManhwaLand.vip",
+  "locale": "id",
+  "domain": "www.manhwaland.baby",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "MYSHOJO",
+  "className": "MyShojo",
+  "title": "MyShojo",
+  "locale": "en",
+  "domain": "myshojo.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NIRVANAMANGA",
+  "className": "NirvanaManga",
+  "title": "NirvanaManga",
+  "locale": "tr",
+  "domain": "nirvanamanga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NOROMAX",
+  "className": "Noromax",
+  "title": "Noromax",
+  "locale": "id",
+  "domain": "noromax02.my.id",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ORIGAMIORPHEANS",
+  "className": "Origamiorpheans",
+  "title": "Origami Orpheans",
+  "locale": "pt",
+  "domain": "origami-orpheans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "PATIMANGA",
+  "className": "PatiManga",
+  "title": "PatiManga",
+  "locale": "tr",
+  "domain": "www.patimanga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "POINTZEROTOONS",
+  "className": "PointZeroToons",
+  "title": "PointZero Toons",
+  "locale": "pt",
+  "domain": "pointzerotoons.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RACKUSREADS",
+  "className": "RackusReads",
+  "title": "RackusReads",
+  "locale": "en",
+  "domain": "rackusreads.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAIKISCAN",
+  "className": "Raikiscan",
+  "title": "RaikiScan",
+  "locale": "es",
+  "domain": "raikiscan.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "RAINDROPTEAMFAN",
+  "className": "Raindropteamfan",
+  "title": "Raindrop Fansub",
+  "locale": "tr",
+  "domain": "www.raindropteamfan.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAVENSCANS",
+  "className": "RavenScans",
+  "title": "RavenScans",
+  "locale": "en",
+  "domain": "ravenscans.org",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "READKOMIK",
+  "className": "Readkomik",
+  "title": "ReadKomik",
+  "locale": "en",
+  "domain": "novelstreams.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "REAPERTRANS",
+  "className": "ReaperTrans",
+  "title": "ReaperTrans",
+  "locale": "th",
+  "domain": "reapertrans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RIMUSCANS",
+  "className": "RimuScans",
+  "title": "RimuScans",
+  "locale": "fr",
+  "domain": "rimuscans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ROKARICOMICS",
+  "className": "RokariComics",
+  "title": "Rokari Comics",
+  "locale": "en",
+  "domain": "rokaricomics.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectChapter": "#chapterlist li:has(div.chbox):has(div.eph-num):has(a[href]):not(:has(.text-gold))"
+  }
+ },
+ {
+  "id": "SASANGEYOU",
+  "className": "Sasangeyou",
+  "title": "Sasangeyou",
+  "locale": "id",
+  "domain": "sasangeyou.net",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SEKTEDOUJIN",
+  "className": "Sektedoujin",
+  "title": "SekteDoujin",
+  "locale": "id",
+  "domain": "sektedoujin.cc",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "SHIJIESCANS",
+  "className": "ShijieScans",
+  "title": "ShijieScans",
+  "locale": "tr",
+  "domain": "shijiescans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/seri"
+  }
+ },
+ {
+  "id": "SHIRAKAMI",
+  "className": "Shirakami",
+  "title": "Shirakami",
+  "locale": "id",
+  "domain": "shirakami.xyz",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SOULSCANS",
+  "className": "SoulScans",
+  "title": "SoulScans",
+  "locale": "id",
+  "domain": "soulscans.my.id",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "STELLARSABER",
+  "className": "StellarSaber",
+  "title": "StellarSaber",
+  "locale": "ar",
+  "domain": "stellarsaber.pro",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SUSHISCANFR",
+  "className": "SushiScanFR",
+  "title": "SushiScan.fr",
+  "locale": "fr",
+  "domain": "sushiscan.fr",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/catalogue"
+  }
+ },
+ {
+  "id": "SUSHISCAN",
+  "className": "SushiScan",
+  "title": "SushiScan.Net",
+  "locale": "fr",
+  "domain": "sushiscan.net",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/catalogue",
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "TAROTSCANS",
+  "className": "TarotScans",
+  "title": "TarotScans",
+  "locale": "tr",
+  "domain": "www.tarotscans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "THAIMANGA",
+  "className": "ThaiManga",
+  "title": "ThaiManga",
+  "locale": "th",
+  "domain": "www.thaimanga.net",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "THUNDERSCANS",
+  "className": "ThunderScans",
+  "title": "ThunderScans",
+  "locale": "ar",
+  "domain": "lavascans.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/browse-manga",
+   "datePattern": "yyyy/MM/dd",
+   "selectMangaList": "article.legend-card",
+   "selectMangaListImg": "img.legend-img",
+   "selectMangaListTitle": "h3.legend-title a",
+   "selectChapter": ".ch-list-grid .ch-item"
+  }
+ },
+ {
+  "id": "TOOMTAMMANGA",
+  "className": "ToomtamManga",
+  "title": "ToomtamManga",
+  "locale": "th",
+  "domain": "toomtam-manga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "TOONHUNTER",
+  "className": "ToonHunterParser",
+  "title": "ToonHunter",
+  "locale": "th",
+  "domain": "toonhunter.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "TSUNDOKU",
+  "className": "Tsundoku",
+  "title": "Tsundoku",
+  "locale": "pt",
+  "domain": "tsundoku.com.br",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "UMIMANGA",
+  "className": "UmiManga",
+  "title": "UmiManga",
+  "locale": "ar",
+  "domain": "www.umimanga.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "WALPURGISCAN",
+  "className": "Walpurgiscan",
+  "title": "WalpurgiScan",
+  "locale": "it",
+  "domain": "www.walpurgiscan.it",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "MMM d, yyyy"
+  }
+ },
+ {
+  "id": "SODSAIME",
+  "className": "Sodsaime",
+  "title": "สดใสเมะ",
+  "locale": "th",
+  "domain": "www.xn--l3c0azab5a2gta.com",
+  "family": "MangaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAWORLD",
+  "className": "MangaWorld",
+  "title": "MangaWorld",
+  "locale": "it",
+  "domain": "mangaworld.mx",
+  "family": "MangaWorldParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAWORLDADULT",
+  "className": "MangaWorldAdult",
+  "title": "MangaWorldAdult",
+  "locale": "it",
+  "domain": "mangaworldadult.net",
+  "family": "MangaWorldParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "IMPERIODABRITANNIA",
+  "className": "ImperiodaBritannia",
+  "title": "Imp\\u00e9rio da Britannia",
+  "locale": "pt",
+  "domain": "imperiodabritannia.net",
+  "family": "MangoThemeParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ANZMANGASHD",
+  "className": "AnzMangasHd",
+  "title": "AnzMangasHd",
+  "locale": "es",
+  "domain": "www.anzmangashd.com",
+  "family": "MmrcmsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "BANANASCAN_COM",
+  "className": "BananaScan",
+  "title": "BananaScan.Com",
+  "locale": "en",
+  "domain": "bananascans.com",
+  "family": "MmrcmsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGA_DENIZI",
+  "className": "MangaDenizi",
+  "title": "MangaDenizi",
+  "locale": "tr",
+  "domain": "www.mangadenizi.net",
+  "family": "MmrcmsParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd.MM.yyyy"
+  }
+ },
+ {
+  "id": "ONMA",
+  "className": "Onma",
+  "title": "Onma",
+  "locale": "ar",
+  "domain": "onma.me",
+  "family": "MmrcmsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "READCOMICSONLINE",
+  "className": "ReadComicsOnline",
+  "title": "ReadComicsOnline.ru",
+  "locale": "en",
+  "domain": "readcomicsonline.ru",
+  "family": "MmrcmsParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectState": "dt:contains(Status)"
+  }
+ },
+ {
+  "id": "SCANVF",
+  "className": "ScanVf",
+  "title": "ScanVf",
+  "locale": "fr",
+  "domain": "www.scan-vf.net",
+  "family": "MmrcmsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "BERSERKSCAN",
+  "className": "BerserkScan",
+  "title": "BerserkScan",
+  "locale": "fr",
+  "domain": "berserkscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "BLUELOCKSCAN",
+  "className": "BlueLockScan",
+  "title": "BlueLockScan",
+  "locale": "fr",
+  "domain": "bluelockscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "CHAINSAWMANSCAN",
+  "className": "ChainsawManScan",
+  "title": "ChainsawManScan",
+  "locale": "fr",
+  "domain": "chainsawman-scan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DANDADAN",
+  "className": "Dandadan",
+  "title": "Dandadan",
+  "locale": "fr",
+  "domain": "dandadan.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DEMONSLAYERSCAN",
+  "className": "DemonSlayerScan",
+  "title": "DemonSlayerScan",
+  "locale": "fr",
+  "domain": "demonslayerscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DRSTONE",
+  "className": "DrStone",
+  "title": "DrStone",
+  "locale": "fr",
+  "domain": "drstone.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "FIREFORCE",
+  "className": "FireForce",
+  "title": "FireForce",
+  "locale": "fr",
+  "domain": "fireforce.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HAIKYUU",
+  "className": "Haikyuu",
+  "title": "Haikyuu",
+  "locale": "fr",
+  "domain": "haikyuu.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HELLSPARADISESCAN",
+  "className": "HellsParadiseScan",
+  "title": "HellsParadiseScan",
+  "locale": "fr",
+  "domain": "hellsparadisescan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HUNTERXHUNTERSCAN",
+  "className": "HunterXHunterScan",
+  "title": "HunterXHunterScan",
+  "locale": "fr",
+  "domain": "hunterxhunterscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "KINGDOMSCAN",
+  "className": "KingdomScan",
+  "title": "KingdomScan",
+  "locale": "fr",
+  "domain": "kingdomscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MASHLESCAN",
+  "className": "MashleScan",
+  "title": "MashleScan",
+  "locale": "fr",
+  "domain": "mashlescan.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MYHEROACADEMIASCAN",
+  "className": "MyHeroacAdemiaScan",
+  "title": "MyHeroacAdemiaScan",
+  "locale": "fr",
+  "domain": "myheroacademiascan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ONEPIECESCAN",
+  "className": "OnePieceScan",
+  "title": "OnePieceScan",
+  "locale": "fr",
+  "domain": "onepiecescan.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ONEPUNCHMANSCAN",
+  "className": "OnePunchManScan",
+  "title": "OnePunchManScan",
+  "locale": "fr",
+  "domain": "onepunchmanscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "OSHINOKO",
+  "className": "OshiNoKo",
+  "title": "OshiNoKo",
+  "locale": "fr",
+  "domain": "oshinoko.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SAKAMOTODAYS",
+  "className": "SakamotoDays",
+  "title": "SakamotoDays",
+  "locale": "fr",
+  "domain": "sakamotodays.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCANBORUTO",
+  "className": "ScanBoruto",
+  "title": "ScanBoruto",
+  "locale": "fr",
+  "domain": "scanboruto.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCANJUJUTSUKAISEN",
+  "className": "ScanJujutsuKaisen",
+  "title": "ScanJujutsuKaisen",
+  "locale": "fr",
+  "domain": "scanjujutsukaisen.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SNKSCAN",
+  "className": "SnkScan",
+  "title": "SnkScan",
+  "locale": "fr",
+  "domain": "snkscan.com",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOKYOREVENGERS",
+  "className": "TokyoRevengers",
+  "title": "TokyoRevengers",
+  "locale": "fr",
+  "domain": "tokyorevengers.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "VINLANDSAGA",
+  "className": "VinlandSaga",
+  "title": "VinlandSaga",
+  "locale": "fr",
+  "domain": "vinlandsaga.fr",
+  "family": "OneMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "FMTEAM",
+  "className": "FmTeam",
+  "title": "FmTeam",
+  "locale": "fr",
+  "domain": "fmteam.fr",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GTOTHEGREATSITE",
+  "className": "GtoTheGreatSite",
+  "title": "GtoTheGreatSite",
+  "locale": "it",
+  "domain": "reader.gtothegreatsite.net",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HASTATEAM",
+  "className": "HastaTeam",
+  "title": "HastaTeamDdt",
+  "locale": "it",
+  "domain": "ddt.hastateam.com",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HASTATEAM_READER",
+  "className": "HastaTeamReader",
+  "title": "HastaTeamReader",
+  "locale": "it",
+  "domain": "reader.hastateam.com",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "HNISCANTRAD",
+  "className": "HniScantrad",
+  "title": "HniScantrad",
+  "locale": "fr",
+  "domain": "hni-scantrad.net",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LUPITEAM",
+  "className": "LupiTeam",
+  "title": "LupiTeam",
+  "locale": "it",
+  "domain": "lupiteam.net",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "PHOENIXSCANS",
+  "className": "PhoenixScans",
+  "title": "PhoenixScans",
+  "locale": "it",
+  "domain": "www.phoenixscans.com",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TUTTOANIMEMANGA",
+  "className": "TuttoAnimeManga",
+  "title": "TuttoAnimeManga",
+  "locale": "it",
+  "domain": "tuttoanimemanga.net",
+  "family": "PizzaReaderParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAFR",
+  "className": "MangaFr",
+  "title": "MangaFr",
+  "locale": "fr",
+  "domain": "www.mangafr.org",
+  "family": "ScanParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/series"
+  }
+ },
+ {
+  "id": "MANGAITALIA",
+  "className": "MangaItalia",
+  "title": "MangaItalia",
+  "locale": "it",
+  "domain": "mangaita.io",
+  "family": "ScanParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGATERRA",
+  "className": "MangaTerra",
+  "title": "MangaTerra",
+  "locale": "pt",
+  "domain": "manga-terra.com",
+  "family": "ScanParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCANITA",
+  "className": "ScanIta",
+  "title": "ScanIta.org",
+  "locale": "it",
+  "domain": "scanita.org",
+  "family": "ScanParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCANTRAD",
+  "className": "ScanTrad",
+  "title": "ScanTrad",
+  "locale": "fr",
+  "domain": "scan-trad.com",
+  "family": "ScanParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SCANVFORG",
+  "className": "ScanVfOrg",
+  "title": "ScanVf.org",
+  "locale": "fr",
+  "domain": "scanvf.org",
+  "family": "ScanParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "YKMH",
+  "className": "Ykmh",
+  "title": "Ykmh",
+  "locale": "zh",
+  "domain": "www.ykmh.net",
+  "family": "SinmhParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TENSHIMANGA",
+  "className": "TenshiManga",
+  "title": "Tenshi Manga",
+  "locale": "tr",
+  "domain": "tenshimanga.com",
+  "family": "UzayMangaParser",
+  "isNsfw": false,
+  "overrides": {
+   "cdnUrl": "https://cdn-t.efsaneler2.can.re"
+  }
+ },
+ {
+  "id": "UZAYMANGA",
+  "className": "UzayManga",
+  "title": "Uzay Manga",
+  "locale": "tr",
+  "domain": "uzaymanga.com",
+  "family": "UzayMangaParser",
+  "isNsfw": false,
+  "overrides": {
+   "cdnUrl": "https://cdn-u.efsaneler2.can.re"
+  }
+ },
+ {
+  "id": "DOCTRUYEN3Q",
+  "className": "DocTruyen3Q",
+  "title": "DocTruyen3Q",
+  "locale": "vi",
+  "domain": "doctruyen3qui15.pro",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "MANGARAW",
+  "className": "MangaRaw",
+  "title": "MangaRaw",
+  "locale": "ja",
+  "domain": "mangaraw.best",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/search/manga"
+  }
+ },
+ {
+  "id": "NETTRUYEN",
+  "className": "NetTruyen",
+  "title": "NetTruyen",
+  "locale": "vi",
+  "domain": "nettruyenar.com",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NETTRUYENHE",
+  "className": "NetTruyenHE",
+  "title": "NetTruyenHE",
+  "locale": "vi",
+  "domain": "nettruyenhe.com",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {
+   "listUrl": "/tim-kiem-nang-cao"
+  }
+ },
+ {
+  "id": "NETTRUYENVIE",
+  "className": "NetTruyenVie",
+  "title": "NetTruyenVie",
+  "locale": "vi",
+  "domain": "nettruyenvia.com",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NEWTRUYEN",
+  "className": "NewTruyen",
+  "title": "NewTruyen",
+  "locale": "vi",
+  "domain": "newtruyentranh4.com",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "NHATTRUYENVN",
+  "className": "NhatTruyenVN",
+  "title": "NhatTruyenVN",
+  "locale": "vi",
+  "domain": "nhattruyenqq.com",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TOPTRUYEN",
+  "className": "TopTruyen",
+  "title": "TopTruyen",
+  "locale": "vi",
+  "domain": "www.toptruyentv11.com",
+  "family": "WpComicsParser",
+  "isNsfw": false,
+  "overrides": {
+   "datePattern": "dd/MM/yyyy"
+  }
+ },
+ {
+  "id": "ANIMEXNOVEL",
+  "className": "AnimeXNovel",
+  "title": "AnimeXNovel",
+  "locale": "pt",
+  "domain": "www.animexnovel.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DATGARSCANLATION",
+  "className": "DatgarScanlation",
+  "title": "DatgarScanlation",
+  "locale": "es",
+  "domain": "datgarscanlation.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "DUOSCANLATORS",
+  "className": "DuoScanlators",
+  "title": "DuoScanlators",
+  "locale": "pt",
+  "domain": "duoscanlators.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ELEVENSCANLATOR",
+  "className": "ElevenScanlator",
+  "title": "ElevenScanlator",
+  "locale": "pt",
+  "domain": "elevenscanlator.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GALAXSCANS",
+  "className": "GalaxScans",
+  "title": "GalaxScanlator",
+  "locale": "pt",
+  "domain": "galaxscanlator.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "GISTAMISHOUSEFANSUB",
+  "className": "GistamisHouseFansub",
+  "title": "GistamisHouseFansub",
+  "locale": "es",
+  "domain": "gistamishousefansub.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectPage": ".post img"
+  }
+ },
+ {
+  "id": "HECKSCANS",
+  "className": "HeckScans",
+  "title": "HeckScans",
+  "locale": "pt",
+  "domain": "heckscans.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "KOMIKREALM",
+  "className": "KomikRealm",
+  "title": "KomikRealm",
+  "locale": "id",
+  "domain": "komikrealm.org",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LEPOYTL",
+  "className": "Lepoytl",
+  "title": "Lepoytl",
+  "locale": "id",
+  "domain": "www.lepoytl.cloud",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LER999",
+  "className": "Ler999",
+  "title": "Ler999",
+  "locale": "pt",
+  "domain": "ler999.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "LONERTL",
+  "className": "LonerTl",
+  "title": "LonerTranslations",
+  "locale": "ar",
+  "domain": "loner-tl.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGAAILAND",
+  "className": "MangaAiLand",
+  "title": "MangaAiLand",
+  "locale": "ar",
+  "domain": "manga-ai-land.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANGASOUL",
+  "className": "MangaSoul",
+  "title": "MangaSoul",
+  "locale": "ar",
+  "domain": "www.manga-soul.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MANHATOK",
+  "className": "ManhaTok",
+  "title": "ManhaTok",
+  "locale": "ar",
+  "domain": "manhatok.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectPage": "#seoneurons-target img"
+  }
+ },
+ {
+  "id": "MIKROKOSMOSFB",
+  "className": "Mikrokosmosfb",
+  "title": "Mikrokosmosfb",
+  "locale": "tr",
+  "domain": "mikrokosmosfb.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "NGAMENKOMIK",
+  "className": "NgamenKomik",
+  "title": "NgamenKomik",
+  "locale": "id",
+  "domain": "ngamenkomik05.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "OKYYKOMIK",
+  "className": "OkyyKomik",
+  "title": "OkyyKomik",
+  "locale": "id",
+  "domain": "www.okyykomik.my.id",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "RAYSSCAN",
+  "className": "RaysScan",
+  "title": "RaysScan",
+  "locale": "pt",
+  "domain": "raysscan.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "REYUME",
+  "className": "ReYume",
+  "title": "ReYume",
+  "locale": "id",
+  "domain": "www.re-yume.my.id",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SHADOWCEVIRI",
+  "className": "ShadowCeviri",
+  "title": "ShadowCeviri",
+  "locale": "tr",
+  "domain": "shadowceviri.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SHIYURASUB",
+  "className": "ShiyuraSub",
+  "title": "ShiyuraSub",
+  "locale": "id",
+  "domain": "shiyurasub.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "TEMAKIMANGAS",
+  "className": "TemakiMangas",
+  "title": "TemakiMangas",
+  "locale": "pt",
+  "domain": "temakimangas.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {
+   "selectPage": "#reader div.separator img"
+  }
+ },
+ {
+  "id": "TOONCUBUS",
+  "className": "ToonCubus",
+  "title": "ToonCubus",
+  "locale": "id",
+  "domain": "www.tooncubus.top",
+  "family": "ZeistMangaParser",
+  "isNsfw": true,
+  "overrides": {}
+ },
+ {
+  "id": "TYRANTSCANS",
+  "className": "TyrantScans",
+  "title": "TyrantScans",
+  "locale": "pt",
+  "domain": "www.tyrantscans.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "ULASCOMIC",
+  "className": "UlasComic",
+  "title": "UlasComic",
+  "locale": "id",
+  "domain": "www.ulascomic01.xyz",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "WOLFSCANBR",
+  "className": "WolfScanBr",
+  "title": "WolfScanBr",
+  "locale": "pt",
+  "domain": "wolfscanbr.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "XSANOMANGA",
+  "className": "XsanoManga",
+  "title": "XsanoManga",
+  "locale": "ar",
+  "domain": "www.xsano-manga.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "YAOIFANCLUB",
+  "className": "YaoiFanClub",
+  "title": "YaoiFanClub",
+  "locale": "pt",
+  "domain": "www.yaoifanclub.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "YOKAITEAM",
+  "className": "YokaiTeam",
+  "title": "YokaiTeam",
+  "locale": "ar",
+  "domain": "yokai-team.blogspot.com",
+  "family": "ZeistMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "MAID_ID",
+  "className": "MaidId",
+  "title": "MaidId",
+  "locale": "id",
+  "domain": "www.maid.my.id",
+  "family": "ZMangaParser",
+  "isNsfw": false,
+  "overrides": {}
+ },
+ {
+  "id": "SHIRO_DOUJIN",
+  "className": "ShiroDoujin",
+  "title": "ShiroDoujin",
+  "locale": "id",
+  "domain": "shirodoujin.com",
+  "family": "ZMangaParser",
+  "isNsfw": true,
+  "overrides": {}
+ }
+]

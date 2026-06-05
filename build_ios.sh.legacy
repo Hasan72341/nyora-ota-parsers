@@ -1,0 +1,32 @@
+#!/bin/bash
+set -e
+DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$DIR"
+
+echo "Installing/updating dependencies..."
+npm install --legacy-peer-deps
+
+# esbuild (installed version) can't parse the `with { type: 'json' }` import attribute.
+# Patch index.js in place but ALWAYS restore it, even if esbuild fails midway — a trap
+# guarantees the original (with the attribute, needed by Node/the web build) is restored.
+echo "Patching JSON import assertions for esbuild..."
+cp index.js index.js.bak
+trap 'cp index.js.bak index.js && rm -f index.js.bak parsers.ios.bundle.js' EXIT
+sed -i '' "s/ with { type: 'json' }//g" index.js
+
+echo "Bundling parsers for iOS (no DOM lib — WKWebView provides DOMParser natively)..."
+npx esbuild ios_entry.js \
+    --bundle \
+    --format=iife \
+    --platform=browser \
+    --target=safari17 \
+    --global-name=NyoraParsers \
+    --alias:node:crypto=./node_crypto_shim.js \
+    --outfile=parsers.ios.bundle.js
+
+OUT="$DIR/../../../../nyora-ios/NyoraApp/NyoraApp/Resources"
+mkdir -p "$OUT"
+cp parsers.ios.bundle.js "$OUT/parsers.bundle.js"
+cp sources.json "$OUT/parsers_sources.json"
+echo "Done. Bundle → $OUT/parsers.bundle.js  Sources → $OUT/parsers_sources.json"
+# trap restores index.js + cleans temp artifacts on exit.

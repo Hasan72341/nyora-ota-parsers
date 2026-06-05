@@ -1,0 +1,11 @@
+# Dependency directory
+node_modules/
+
+# Compilation outputs
+dist/
+staging/
+
+# Logs and system files
+*.log
+.DS_Store
+.vscode/
