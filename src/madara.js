@@ -134,7 +134,7 @@ export class MadaraParser extends BaseParser {
             try {
                 const text = await this.context.httpGet(apiBase + "/api/series/" + k + "?nyoraTry=" + Date.now());
                 const res = JSON.parse(text);
-                const s = res.series || res.data || res;
+                const s = res.series || res.data?.series || res.data || res;
                 return (s && s.title) ? s : null;
             } catch { return null; }
         };
