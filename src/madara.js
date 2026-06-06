@@ -15,7 +15,7 @@ export class MadaraParser extends BaseParser {
             "em lançamento", "онгоінг", "publishing", "devam ediyor", "em andamento",
             "in corso", "güncel", "berjalan", "продолжается", "updating", "lançando",
             "in arrivo", "emision", "en emision", "مستمر", "curso", "en marcha",
-            "publicandose", "publicando", "连载中"
+            "publicandose", "publicando", "连载중"
         ]);
 
         this.finished = new Set([
@@ -46,8 +46,6 @@ export class MadaraParser extends BaseParser {
                 const elements = Array.from(doc.querySelectorAll(selector));
                 if (elements.length) return elements;
             } catch {
-                // Source variants sometimes need newer selector syntax. Fall
-                // through to simpler selectors when the DOM rejects one.
             }
         }
         return [];
@@ -120,19 +118,18 @@ export class MadaraParser extends BaseParser {
     }
 
     async getJson(url) {
-        const text = await this.context.httpGet(url);
+        const text = await this.context.httpGet(url, this);
         return JSON.parse(text);
     }
 
     async getAsuraDetails(manga) {
         let key = this.asuraSeriesKey(manga.url);
-        if (!key) throw new Error("Missing Asura series key");
-        
         const apiBase = this.asuraApiBase();
+        
         const fetchSeries = async (k) => {
             if (!k) return null;
             try {
-                const text = await this.context.httpGet(apiBase + "/api/series/" + k + "?nyoraTry=" + Date.now());
+                const text = await this.context.httpGet(apiBase + "/api/series/" + k + "?nyoraTry=" + Date.now(), this);
                 const res = JSON.parse(text);
                 const s = res.series || res.data?.series || res.data || res;
                 return (s && s.title) ? s : null;
@@ -147,13 +144,10 @@ export class MadaraParser extends BaseParser {
                 const searchUrl = "https://asurascans.com/browse?search=" + encodeURIComponent(searchTerm);
                 const searchHtml = await this.context.httpGet(searchUrl, this);
                 const searchDoc = this.context.parseHTML(searchHtml);
-                
                 const links = Array.from(searchDoc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"]'));
                 const normalize = (t) => (t || "").toLowerCase().replace(/[^a-z0-9]/g, "");
                 const targetTitle = normalize(manga.title);
-                
                 const foundA = links.find(a => normalize(a.textContent) === targetTitle) || links[0];
-                
                 if (foundA) {
                     const newRel = this.toRelativeUrl(foundA.getAttribute("href")).replace(/\/$/, "");
                     const newKey = this.asuraSeriesKey(newRel);
@@ -162,7 +156,9 @@ export class MadaraParser extends BaseParser {
                         if (series) key = newKey;
                     }
                 }
-             } catch (e) {}
+             } catch (e) {
+                 console.error("Asura search resolution failed", e);
+             }
         }
 
         if (!series) series = {};
@@ -177,7 +173,7 @@ export class MadaraParser extends BaseParser {
 
         let chapterRows = [];
         try {
-            const text = await this.context.httpGet(apiBase + "/api/series/" + key + "/chapters?nyoraTry=" + Date.now());
+            const text = await this.context.httpGet(apiBase + "/api/series/" + key + "/chapters?nyoraTry=" + Date.now(), this);
             const chaptersRes = JSON.parse(text);
             chapterRows = Array.isArray(chaptersRes.data) ? chaptersRes.data : [];
         } catch {
@@ -185,7 +181,7 @@ export class MadaraParser extends BaseParser {
         }
         
         const publicUrl = "https://asurascans.com/comics/" + key;
-        const chapters = chapterRows.map((row) => new MangaChapter({
+        let chapters = chapterRows.map((row) => new MangaChapter({
             id: publicUrl + "/chapter/" + row.number,
             url: publicUrl + "/chapter/" + row.number,
             title: row.title || ("Chapter " + row.number),
@@ -194,8 +190,32 @@ export class MadaraParser extends BaseParser {
             source: this.source
         }));
 
+        if (chapters.length === 0) {
+            try {
+                const html = await this.context.httpGet("https://asurascans.com/comics/" + key, this);
+                const doc = this.context.parseHTML(html);
+                const links = Array.from(doc.querySelectorAll('a[href*="/chapter/"]'));
+                chapters = links.map((a, i) => {
+                    const href = a.getAttribute("href");
+                    const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
+                    const titleText = a.textContent.trim();
+                    const numMatch = titleText.match(/Chapter\s+([\d.]+)/i);
+                    return new MangaChapter({
+                        id: relHref,
+                        url: relHref,
+                        title: titleText,
+                        number: numMatch ? parseFloat(numMatch[1]) : (links.length - i),
+                        source: this.source
+                    });
+                }).filter(c => c.url.includes(key));
+            } catch (e) {}
+        }
+
         return new Manga({
             ...manga,
+            id: publicUrl,
+            url: publicUrl,
+            publicUrl: publicUrl,
             title: series.title || manga.title,
             description: series.description || "",
             authors: [series.author, series.artist].filter(Boolean),
@@ -213,7 +233,7 @@ export class MadaraParser extends BaseParser {
         const number = (rel.match(/\/chapter\/([^/?#]+)/) || [])[1];
         if (key && number) {
             try {
-                const data = JSON.parse(await this.context.httpGet(`${this.asuraApiBase()}/api/series/${key}/chapters/${number}?nyoraTry=${Date.now()}`));
+                const data = JSON.parse(await this.context.httpGet(`${this.asuraApiBase()}/api/series/${key}/chapters/${number}?nyoraTry=${Date.now()}`, this));
                 const pages = data && data.data && data.data.chapter && Array.isArray(data.data.chapter.pages)
                     ? data.data.chapter.pages
                     : [];
@@ -225,7 +245,6 @@ export class MadaraParser extends BaseParser {
                     })).filter((page) => page.url);
                 }
             } catch {
-                // Fall through to chapter HTML extraction.
             }
         }
         return null;
@@ -363,9 +382,7 @@ export class MadaraParser extends BaseParser {
                     break;
             }
 
-            const html = await this.context.httpPost(url, params.toString(), {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            }, this);
+            const html = await this.context.httpPost(url, params.toString(), {}, this);
             return this.parseMangaList(html);
         }
     }
