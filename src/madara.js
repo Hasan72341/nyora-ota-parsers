@@ -87,7 +87,7 @@ export class MadaraParser extends BaseParser {
         const doc = this.context.parseHTML(html);
         const seen = new Set();
         const entries = [];
-        for (const a of Array.from(doc.querySelectorAll('a[href^="/comics/"], a[href^="https://asurascans.com/comics/"]'))) {
+        for (const a of Array.from(doc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"], a[href*="/manga/"]'))) {
             const href = a.getAttribute("href") || "";
             if (!href || href.includes("/chapter/")) continue;
             const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
@@ -111,9 +111,12 @@ export class MadaraParser extends BaseParser {
 
     asuraSeriesKey(url) {
         const rel = this.toRelativeUrl(url || "");
-        // Try to match the last segment with hash first, then fallback to general pattern
-        const match = rel.match(/\/(series|comics|manga)\/([^/?#]+)/);
-        return match ? match[2] : "";
+        const match = rel.match(/\/(series|comics|manga)\//);
+        if (match) {
+             const key = rel.substring(rel.indexOf(match[0]) + match[0].length).split(/[/?#]/)[0];
+             return key || "";
+        }
+        return "";
     }
 
     async getJson(url) {
@@ -121,12 +124,13 @@ export class MadaraParser extends BaseParser {
         return JSON.parse(text);
     }
 
-                        async getAsuraDetails(manga) {
+    async getAsuraDetails(manga) {
         let key = this.asuraSeriesKey(manga.url);
         if (!key) throw new Error("Missing Asura series key");
         
         const apiBase = this.asuraApiBase();
         const fetchSeries = async (k) => {
+            if (!k) return null;
             try {
                 const text = await this.context.httpGet(apiBase + "/api/series/" + k + "?nyoraTry=" + Date.now());
                 const res = JSON.parse(text);
@@ -137,15 +141,15 @@ export class MadaraParser extends BaseParser {
 
         let series = await fetchSeries(key);
         
-        if (!series) {
+        if (!series && manga.title) {
              try {
-                const searchTerm = manga.title.replace(/['’]/g, "");
+                const searchTerm = manga.title.replace(/['’]/g, "").replace(/\s+/g, " ").trim();
                 const searchUrl = "https://asurascans.com/browse?search=" + encodeURIComponent(searchTerm);
                 const searchHtml = await this.context.httpGet(searchUrl, this);
                 const searchDoc = this.context.parseHTML(searchHtml);
                 
                 const links = Array.from(searchDoc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"]'));
-                const normalize = (t) => t.toLowerCase().replace(/[^a-z0-9]/g, "");
+                const normalize = (t) => (t || "").toLowerCase().replace(/[^a-z0-9]/g, "");
                 const targetTitle = normalize(manga.title);
                 
                 const foundA = links.find(a => normalize(a.textContent) === targetTitle) || links[0];
@@ -180,7 +184,7 @@ export class MadaraParser extends BaseParser {
             chapterRows = [];
         }
         
-        const publicUrl = manga.url.replace(/\/$/, "");
+        const publicUrl = "https://asurascans.com/comics/" + key;
         const chapters = chapterRows.map((row) => new MangaChapter({
             id: publicUrl + "/chapter/" + row.number,
             url: publicUrl + "/chapter/" + row.number,
@@ -205,7 +209,8 @@ export class MadaraParser extends BaseParser {
 
     async getAsuraPages(chapter) {
         const key = this.asuraSeriesKey(chapter.url);
-        const number = (this.toRelativeUrl(chapter.url).match(/\/chapter\/([^/?#]+)/) || [])[1];
+        const rel = this.toRelativeUrl(chapter.url);
+        const number = (rel.match(/\/chapter\/([^/?#]+)/) || [])[1];
         if (key && number) {
             try {
                 const data = JSON.parse(await this.context.httpGet(`${this.asuraApiBase()}/api/series/${key}/chapters/${number}?nyoraTry=${Date.now()}`));
@@ -249,7 +254,7 @@ export class MadaraParser extends BaseParser {
         for (const a of Array.from(doc.querySelectorAll('a[href*="/chapter/"]'))) {
             const href = a.getAttribute("href") || "";
             const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
-            if (!relHref.match(/\\\/(series|comics|manga)\\\//)  || !relHref.includes("/chapter/") || seen.has(relHref)) continue;
+            if (!relHref.match(/\/(series|comics|manga)\//) || !relHref.includes("/chapter/") || seen.has(relHref)) continue;
             const text = a.textContent.replace(/\s+/g, " ").trim();
             const match = text.match(/Chapter\s+[\d.]+/i) || relHref.match(/chapter\/([^/?#]+)/i);
             const title = match ? String(match[0]).replace("chapter/", "Chapter ") : text || "Chapter";
@@ -322,7 +327,6 @@ export class MadaraParser extends BaseParser {
             if (pages > 1) url += `/page/${pages}`;
             url += `/?s=${encodeURIComponent(filter.query || "")}&post_type=wp-manga`;
 
-            // Simple mapping for orders
             let orderStr = "";
             switch (order) {
                 case SortOrder.POPULARITY: orderStr = "views"; break;
@@ -346,7 +350,6 @@ export class MadaraParser extends BaseParser {
             params.append("vars[post_status]", "publish");
             params.append("vars[manga_archives_item_layout]", "default");
 
-            // Handle sorting
             switch (order) {
                 case SortOrder.POPULARITY:
                     params.append("vars[meta_key]", "_wp_manga_views");
@@ -358,7 +361,6 @@ export class MadaraParser extends BaseParser {
                     params.append("vars[orderby]", "meta_value_num");
                     params.append("vars[order]", "desc");
                     break;
-                // ... add more if needed ...
             }
 
             const html = await this.context.httpPost(url, params.toString(), {
@@ -429,8 +431,6 @@ export class MadaraParser extends BaseParser {
 
         const title = doc.querySelector("h1")?.textContent?.trim() || manga.title;
         const desc = doc.querySelector("div.description-summary div.summary__content, .post-content_item > h5 + div")?.innerHTML || "";
-        
-        // Chapters
         const chapters = await this.loadChapters(manga.url, doc);
 
         return new Manga({
