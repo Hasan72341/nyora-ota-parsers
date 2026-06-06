@@ -121,14 +121,14 @@ export class MadaraParser extends BaseParser {
         return JSON.parse(text);
     }
 
-            async getAsuraDetails(manga) {
+                        async getAsuraDetails(manga) {
         let key = this.asuraSeriesKey(manga.url);
         if (!key) throw new Error("Missing Asura series key");
         
         const apiBase = this.asuraApiBase();
         const fetchSeries = async (k) => {
             try {
-                const text = await this.context.httpGet(`${apiBase}/api/series/${k}?nyoraTry=${Date.now()}`);
+                const text = await this.context.httpGet(apiBase + "/api/series/" + k + "?nyoraTry=" + Date.now());
                 const res = JSON.parse(text);
                 const s = res.series || res.data || res;
                 return (s && s.title) ? s : null;
@@ -137,17 +137,14 @@ export class MadaraParser extends BaseParser {
 
         let series = await fetchSeries(key);
         
-        // If initial key fails (likely due to missing hash), try title-based search resolution
         if (!series) {
              try {
-                // Normalize search term: remove apostrophes to avoid mismatch issues
                 const searchTerm = manga.title.replace(/['’]/g, "");
-                const searchUrl = `https://asurascans.com/browse?search=${encodeURIComponent(searchTerm)}`;
+                const searchUrl = "https://asurascans.com/browse?search=" + encodeURIComponent(searchTerm);
                 const searchHtml = await this.context.httpGet(searchUrl, this);
                 const searchDoc = this.context.parseHTML(searchHtml);
                 
                 const links = Array.from(searchDoc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"]'));
-                
                 const normalize = (t) => t.toLowerCase().replace(/[^a-z0-9]/g, "");
                 const targetTitle = normalize(manga.title);
                 
@@ -166,35 +163,37 @@ export class MadaraParser extends BaseParser {
 
         if (!series) series = {};
 
+        const parseDate = (d) => {
+            if (!d) return null;
+            try {
+                const date = new Date(d);
+                return isNaN(date.getTime()) ? null : date.toISOString();
+            } catch { return null; }
+        };
+
         let chapterRows = [];
         try {
-            const chaptersRes = await this.getJson(`${apiBase}/api/series/${key}/chapters?nyoraTry=${Date.now()}`);
+            const text = await this.context.httpGet(apiBase + "/api/series/" + key + "/chapters?nyoraTry=" + Date.now());
+            const chaptersRes = JSON.parse(text);
             chapterRows = Array.isArray(chaptersRes.data) ? chaptersRes.data : [];
         } catch {
             chapterRows = [];
         }
         
-        const publicUrl = series.public_url || `/series/${key}`;
+        const publicUrl = manga.url.replace(/\/$/, "");
         const chapters = chapterRows.map((row) => new MangaChapter({
-            id: `${publicUrl}/chapter/${row.number}`,
-            url: `${publicUrl}/chapter/${row.number}`,
-            title: row.title || `Chapter ${row.number}`,
+            id: publicUrl + "/chapter/" + row.number,
+            url: publicUrl + "/chapter/" + row.number,
+            title: row.title || ("Chapter " + row.number),
             number: Number(row.number) || 0,
-            uploadDate: row.published_at ? new Date(row.published_at).toISOString() : null,
+            uploadDate: parseDate(row.published_at),
             source: this.source
         }));
 
         return new Manga({
             ...manga,
-            id: publicUrl,
-            url: publicUrl,
-            publicUrl: this.toAbsoluteUrl(publicUrl),
             title: series.title || manga.title,
-            altTitles: series.alt_titles || [],
             description: series.description || "",
-            coverUrl: series.cover || manga.coverUrl || "",
-            largeCoverUrl: series.cover || manga.largeCoverUrl || manga.coverUrl || "",
-            rating: Number(series.rating) || 0,
             authors: [series.author, series.artist].filter(Boolean),
             tags: (series.genres || []).map((genre) => ({ title: genre.name, key: genre.slug || genre.name })),
             state: String(series.status || "").toLowerCase() === "dropped" ? MangaState.ABANDONED : MangaState.ONGOING,
