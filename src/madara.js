@@ -1,5 +1,7 @@
 import { BaseParser, Manga, MangaChapter, MangaPage, MangaState, SortOrder, ContentRating } from './base.js';
 
+const DESKTOP_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+
 export class MadaraParser extends BaseParser {
     constructor(context, source, domain, pageSize = 12) {
         super(context, source, domain, pageSize);
@@ -15,7 +17,7 @@ export class MadaraParser extends BaseParser {
             "em lançamento", "онгоінг", "publishing", "devam ediyor", "em andamento",
             "in corso", "güncel", "berjalan", "продолжается", "updating", "lançando",
             "in arrivo", "emision", "en emision", "مستمر", "curso", "en marcha",
-            "publicandose", "publicando", "连载중"
+            "publicandose", "publicando", "连载中"
         ]);
 
         this.finished = new Set([
@@ -69,19 +71,10 @@ export class MadaraParser extends BaseParser {
         return "https://cdn.asurascans.com";
     }
 
-    async httpGetStable(url, marker) {
-        let html = await this.context.httpGet(url, this);
-        for (let i = 0; this.isAsuraAstro() && marker && !html.includes(marker) && i < 4; i++) {
-            const sep = url.includes("?") ? "&" : "?";
-            html = await this.context.httpGet(`${url}${sep}nyoraTry=${Date.now()}-${i}`, this);
-        }
-        return html;
-    }
-
     async getAsuraListPage(page, order, filter) {
         let url = `https://${this.domain}/browse?page=${page}`;
         if (filter.query) url += `&search=${encodeURIComponent(filter.query)}`;
-        const html = await this.context.httpGet(url, this);
+        const html = await this.context.httpGet(url, { "User-Agent": DESKTOP_UA }, this);
         const doc = this.context.parseHTML(html);
         const seen = new Set();
         const entries = [];
@@ -117,195 +110,105 @@ export class MadaraParser extends BaseParser {
         return "";
     }
 
-    async getJson(url) {
-        const text = await this.context.httpGet(url, this);
-        return JSON.parse(text);
-    }
-
     async getAsuraDetails(manga) {
-        let key = this.asuraSeriesKey(manga.url);
-        const apiBase = this.asuraApiBase();
+        const publicUrl = this.toAbsoluteUrl(manga.url).replace("/series/", "/comics/");
+        let html = await this.context.httpGet(publicUrl, { "User-Agent": DESKTOP_UA }, this);
+        let doc = this.context.parseHTML(html);
         
-        const fetchSeries = async (k) => {
-            if (!k) return null;
+        const canonical = doc.querySelector('link[rel="canonical"]')?.getAttribute("href") || publicUrl;
+        const key = this.asuraSeriesKey(canonical);
+        
+        let title = doc.querySelector("h1")?.textContent?.trim() || manga.title;
+        let description = doc.querySelector('meta[name="description"]')?.getAttribute("content") || 
+                          doc.querySelector('meta[property="og:description"]')?.getAttribute("content") || "";
+        
+        let chapters = Array.from(doc.querySelectorAll('a[href*="/chapter/"]')).map((a, i, all) => {
+            const href = a.getAttribute("href");
+            const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
+            const titleText = a.textContent.trim().replace(/\s+/g, " ");
+            const numMatch = titleText.match(/Chapter\s+([\d.]+)/i);
+            return new MangaChapter({
+                id: relHref,
+                url: relHref,
+                title: titleText,
+                number: numMatch ? parseFloat(numMatch[1]) : (all.length - i),
+                source: this.source
+            });
+        }).filter(c => c.url.includes(key || ""));
+
+        if (chapters.length === 0 || !description) {
             try {
-                const text = await this.context.httpGet(apiBase + "/api/series/" + k + "?nyoraTry=" + Date.now(), this);
+                const apiBase = this.asuraApiBase();
+                const text = await this.context.httpGet(`${apiBase}/api/series/${key}?nyoraTry=${Date.now()}`, { "User-Agent": DESKTOP_UA }, this);
                 const res = JSON.parse(text);
-                const s = res.series || res.data?.series || res.data || res;
-                return (s && s.title) ? s : null;
-            } catch { return null; }
-        };
-
-        let series = await fetchSeries(key);
-        
-        if (!series && manga.title) {
-             try {
-                const searchTerm = manga.title.replace(/['’]/g, "").replace(/\s+/g, " ").trim();
-                const searchUrl = "https://asurascans.com/browse?search=" + encodeURIComponent(searchTerm);
-                const searchHtml = await this.context.httpGet(searchUrl, this);
-                const searchDoc = this.context.parseHTML(searchHtml);
-                const links = Array.from(searchDoc.querySelectorAll('a[href*="/series/"], a[href*="/comics/"]'));
-                const normalize = (t) => (t || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                const targetTitle = normalize(manga.title);
-                const foundA = links.find(a => normalize(a.textContent) === targetTitle) || links[0];
-                if (foundA) {
-                    const newRel = this.toRelativeUrl(foundA.getAttribute("href")).replace(/\/$/, "");
-                    const newKey = this.asuraSeriesKey(newRel);
-                    if (newKey && newKey !== key) {
-                        series = await fetchSeries(newKey);
-                        if (series) key = newKey;
-                    }
-                }
-             } catch (e) {
-                 console.error("Asura search resolution failed", e);
-             }
-        }
-
-        if (!series) series = {};
-
-        const parseDate = (d) => {
-            if (!d) return null;
-            try {
-                const date = new Date(d);
-                return isNaN(date.getTime()) ? null : date.toISOString();
-            } catch { return null; }
-        };
-
-        let chapterRows = [];
-        try {
-            const text = await this.context.httpGet(apiBase + "/api/series/" + key + "/chapters?nyoraTry=" + Date.now(), this);
-            const chaptersRes = JSON.parse(text);
-            chapterRows = Array.isArray(chaptersRes.data) ? chaptersRes.data : [];
-        } catch {
-            chapterRows = [];
-        }
-        
-        const publicUrl = "https://asurascans.com/comics/" + key;
-        let chapters = chapterRows.map((row) => new MangaChapter({
-            id: publicUrl + "/chapter/" + row.number,
-            url: publicUrl + "/chapter/" + row.number,
-            title: row.title || ("Chapter " + row.number),
-            number: Number(row.number) || 0,
-            uploadDate: parseDate(row.published_at),
-            source: this.source
-        }));
-
-        if (chapters.length === 0) {
-            try {
-                const html = await this.context.httpGet("https://asurascans.com/comics/" + key, this);
-                const doc = this.context.parseHTML(html);
-                const links = Array.from(doc.querySelectorAll('a[href*="/chapter/"]'));
-                chapters = links.map((a, i) => {
-                    const href = a.getAttribute("href");
-                    const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
-                    const titleText = a.textContent.trim();
-                    const numMatch = titleText.match(/Chapter\s+([\d.]+)/i);
-                    return new MangaChapter({
-                        id: relHref,
-                        url: relHref,
-                        title: titleText,
-                        number: numMatch ? parseFloat(numMatch[1]) : (links.length - i),
+                const series = res.series || res.data?.series || res.data || {};
+                
+                title = series.title || title;
+                description = series.description || description;
+                
+                if (chapters.length === 0) {
+                    const cText = await this.context.httpGet(`${apiBase}/api/series/${key}/chapters?nyoraTry=${Date.now()}`, { "User-Agent": DESKTOP_UA }, this);
+                    const cRes = JSON.parse(cText);
+                    const rows = Array.isArray(cRes.data) ? cRes.data : [];
+                    chapters = rows.map(row => new MangaChapter({
+                        id: `${canonical}/chapter/${row.number}`,
+                        url: `${canonical}/chapter/${row.number}`,
+                        title: row.title || `Chapter ${row.number}`,
+                        number: Number(row.number) || 0,
                         source: this.source
-                    });
-                }).filter(c => c.url.includes(key));
+                    }));
+                }
             } catch (e) {}
         }
 
         return new Manga({
             ...manga,
-            id: publicUrl,
-            url: publicUrl,
-            publicUrl: publicUrl,
-            title: series.title || manga.title,
-            description: series.description || "",
-            authors: [series.author, series.artist].filter(Boolean),
-            tags: (series.genres || []).map((genre) => ({ title: genre.name, key: genre.slug || genre.name })),
-            state: String(series.status || "").toLowerCase() === "dropped" ? MangaState.ABANDONED : MangaState.ONGOING,
-            contentRating: ContentRating.SAFE,
+            id: canonical,
+            url: canonical,
+            publicUrl: canonical,
+            title,
+            description,
             source: this.source,
-            chapters
+            chapters: chapters.sort((a, b) => b.number - a.number)
         });
     }
 
     async getAsuraPages(chapter) {
-        const key = this.asuraSeriesKey(chapter.url);
-        const rel = this.toRelativeUrl(chapter.url);
-        const number = (rel.match(/\/chapter\/([^/?#]+)/) || [])[1];
-        if (key && number) {
-            try {
-                const data = JSON.parse(await this.context.httpGet(`${this.asuraApiBase()}/api/series/${key}/chapters/${number}?nyoraTry=${Date.now()}`, this));
-                const pages = data && data.data && data.data.chapter && Array.isArray(data.data.chapter.pages)
-                    ? data.data.chapter.pages
-                    : [];
-                if (pages.length) {
-                    return pages.map((page, i) => new MangaPage({
-                        id: page.url || String(i),
-                        url: page.url,
-                        source: this.source
-                    })).filter((page) => page.url);
-                }
-            } catch {
-            }
-        }
-        return null;
-    }
+        const url = this.toAbsoluteUrl(chapter.url);
+        const html = await this.context.httpGet(url, { "User-Agent": DESKTOP_UA }, this);
+        const doc = this.context.parseHTML(html);
 
-    getAsuraCdnPages(chapter, count = 30) {
-        const rel = this.toRelativeUrl(chapter.url);
-        const key = this.asuraSeriesKey(rel);
-        const number = (rel.match(/\/chapter\/([^/?#]+)/) || [])[1];
-        if (!key || !number) return [];
-        const seriesSlug = key.replace(/-[a-f0-9]{8}$/i, "");
-        return Array.from({ length: count }, (_, i) => {
-            const page = String(i + 1).padStart(3, "0");
-            const url = `${this.asuraCdnBase()}/asura-images/chapters/${seriesSlug}/${number}/${page}.webp`;
-            return new MangaPage({
+        let imageUrls = Array.from(doc.querySelectorAll("img[data-page-index], .reading-content img, .page-break img"))
+            .map((img) => this.imageSrc(img))
+            .filter(src => src && src.includes("asura-images"));
+        
+        if (!imageUrls.length) {
+            imageUrls = Array.from(html.matchAll(/https:\/\/cdn\.asurascans\.com\/asura-images\/chapters\/[^"'<>\s)]+/g))
+                .map((match) => match[0]);
+        }
+
+        if (imageUrls.length) {
+            return imageUrls.map((url, i) => new MangaPage({
                 id: url,
                 url,
                 source: this.source
-            });
-        });
-    }
-
-    parseAsuraChapters(doc, mangaUrl) {
-        const seen = new Set();
-        const chapters = [];
-        for (const a of Array.from(doc.querySelectorAll('a[href*="/chapter/"]'))) {
-            const href = a.getAttribute("href") || "";
-            const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
-            if (!relHref.match(/\/(series|comics|manga)\//) || !relHref.includes("/chapter/") || seen.has(relHref)) continue;
-            const text = a.textContent.replace(/\s+/g, " ").trim();
-            const match = text.match(/Chapter\s+[\d.]+/i) || relHref.match(/chapter\/([^/?#]+)/i);
-            const title = match ? String(match[0]).replace("chapter/", "Chapter ") : text || "Chapter";
-            seen.add(relHref);
-            chapters.push(new MangaChapter({
-                id: relHref,
-                url: relHref,
-                title,
-                number: Number((title.match(/[\d.]+/) || [chapters.length + 1])[0]) || chapters.length + 1,
-                source: this.source
             }));
         }
-        return chapters;
-    }
 
-    parseAsuraChaptersHtml(html) {
-        const seen = new Set();
-        const chapters = [];
-        for (const match of html.matchAll(/href="([^"]*\/comics\/[^"]*\/chapter\/[^"#?]+)[^"]*"/g)) {
-            const relHref = this.toRelativeUrl(match[1]).replace(/\/$/, "");
-            if (seen.has(relHref)) continue;
-            const num = (relHref.match(/\/chapter\/([^/?#]+)/) || [])[1] || String(chapters.length + 1);
-            seen.add(relHref);
-            chapters.push(new MangaChapter({
-                id: relHref,
-                url: relHref,
-                title: `Chapter ${num}`,
-                number: Number(num) || chapters.length + 1,
-                source: this.source
-            }));
+        const key = this.asuraSeriesKey(chapter.url);
+        const number = (this.toRelativeUrl(chapter.url).match(/\/chapter\/([^/?#]+)/) || [])[1];
+        if (key && number) {
+            try {
+                const data = JSON.parse(await this.context.httpGet(`${this.asuraApiBase()}/api/series/${key}/chapters/${number}`, { "User-Agent": DESKTOP_UA }, this));
+                const pages = data?.data?.chapter?.pages || [];
+                return pages.map((page, i) => new MangaPage({
+                    id: page.url || String(i),
+                    url: page.url,
+                    source: this.source
+                })).filter(p => p.url);
+            } catch (e) {}
         }
-        return chapters;
+        return [];
     }
 
     parseChapterList(html) {
@@ -418,33 +321,7 @@ export class MadaraParser extends BaseParser {
             return this.getAsuraDetails(manga);
         }
         let html = await this.context.httpGet(this.toAbsoluteUrl(manga.url), this);
-        if (this.isAsuraAstro() && !html.includes("/chapter/")) {
-            html = await this.httpGetStable(this.toAbsoluteUrl(manga.url), "/chapter/");
-        }
         const doc = this.context.parseHTML(html);
-
-        if (this.isAsuraAstro()) {
-            const title = doc.querySelector("h1")?.textContent?.trim() ||
-                (html.match(/<title>(.*?)\s*\|\s*Asura Scans<\/title>/i) || [])[1] ||
-                manga.title;
-            const desc = doc.querySelector('meta[name="description"]')?.getAttribute("content") ||
-                (html.match(/<meta name="description" content="([^"]*)"/i) || [])[1] ||
-                "";
-            const cover = this.imageSrc(Array.from(doc.querySelectorAll("img")).find((img) => img.getAttribute("alt") === title)) ||
-                this.imageSrc(doc.querySelector("img[id*=cover], img[src*=covers]")) ||
-                (doc.querySelector('meta[property="og:image"]')?.getAttribute("content") || "") ||
-                (html.match(/<meta property="og:image" content="([^"]*)"/i) || [])[1] ||
-                "";
-            const chapters = this.parseAsuraChapters(doc, manga.url);
-            return new Manga({
-                ...manga,
-                title,
-                description: desc,
-                coverUrl: cover || manga.coverUrl,
-                largeCoverUrl: cover || manga.largeCoverUrl || manga.coverUrl,
-                chapters: chapters.length ? chapters : this.parseAsuraChaptersHtml(html)
-            });
-        }
 
         const title = doc.querySelector("h1")?.textContent?.trim() || manga.title;
         const desc = doc.querySelector("div.description-summary div.summary__content, .post-content_item > h5 + div")?.innerHTML || "";
@@ -485,38 +362,11 @@ export class MadaraParser extends BaseParser {
     }
 
     async getPages(chapter) {
-        let html;
         if (this.isAsuraAstro()) {
-            const url = this.toAbsoluteUrl(chapter.url);
-            const sep = url.includes("?") ? "&" : "?";
-            html = "";
-            for (let i = 0; !html.includes("asura-images/chapters/") && i < 5; i++) {
-                html = await this.context.httpGet(`${url}${sep}nyoraTry=${Date.now()}-${i}`, this);
-            }
-        } else {
-            html = await this.context.httpGet(this.toAbsoluteUrl(chapter.url), this);
+            return this.getAsuraPages(chapter);
         }
+        const html = await this.context.httpGet(this.toAbsoluteUrl(chapter.url), this);
         const doc = this.context.parseHTML(html);
-
-        if (this.isAsuraAstro()) {
-            let imageUrls = Array.from(doc.querySelectorAll("img[data-page-index]")).map((img) => this.imageSrc(img));
-            if (!imageUrls.length) {
-                imageUrls = Array.from(html.matchAll(/https:\/\/cdn\.asurascans\.com\/asura-images\/chapters\/[^"'<>\s)]+/g))
-                    .map((match) => match[0]);
-            }
-            const pages = imageUrls.map((imageUrl, i) => {
-                return new MangaPage({
-                    id: imageUrl || String(i),
-                    url: imageUrl,
-                    source: this.source
-                });
-            }).filter((p) => p.url);
-            if (pages.length) return pages;
-            const apiPages = await this.getAsuraPages(chapter);
-            if (apiPages && apiPages.length) return apiPages;
-            return this.getAsuraCdnPages(chapter);
-        }
-        
         const images = doc.querySelectorAll("div.reading-content img, .page-break img");
         return Array.from(images).map(img => {
             const imageUrl = this.imageSrc(img);
