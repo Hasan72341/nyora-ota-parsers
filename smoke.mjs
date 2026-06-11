@@ -79,7 +79,7 @@ async function doFetch(url, init = {}, parser) {
 }
 
 const context = {
-  httpGet: (url, parser) => doFetch(url, {}, parser),
+  httpGet: (url, parser, headers = {}) => doFetch(url, { headers }, parser),
   httpPost: (url, body, headers = {}, parser) => doFetch(url, { method: 'POST', headers, body }, parser),
   parseHTML: (html) => new JSDOM(html).window.document,
 };

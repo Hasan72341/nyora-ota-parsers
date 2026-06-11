@@ -9,3 +9,5 @@ staging/
 *.log
 .DS_Store
 .vscode/
+extensions-source/
+port/

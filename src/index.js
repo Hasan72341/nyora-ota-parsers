@@ -10,12 +10,9 @@ import { KeyoappParser } from './keyoapp.js';
 import { FoolSlideParser } from './foolslide.js';
 import { LilianaParser } from './liliana.js';
 import { MadthemeParser } from './madtheme.js';
-import { ScanParser } from './scan.js';
 import { IkenParser } from './iken.js';
 import { MmrcmsParser } from './mmrcms.js';
-import { CupFoxParser } from './cupfox.js';
 import { FmreaderParser, WeLoveMangaParser } from './fmreader.js';
-import { AnimeBootstrapParser } from './animebootstrap.js';
 import { GuyaParser } from './guya.js';
 import { MangaWorldParser } from './mangaworld.js';
 import { MangAdventureParser } from './mangadventure.js';
@@ -29,6 +26,10 @@ import { LikeMangaParser } from './likemanga.js';
 import { SinmhParser } from './sinmh.js';
 import { MangaBoxParser } from './mangabox.js';
 import { MangaFireParser } from './mangafire.js';
+import { WebtoonParser } from './webtoon.js';
+import { LectorMoeParser } from './lectormoe.js';
+import { GigaViewerParser } from './gigaviewer.js';
+import { ComiciViewerParser } from './comiciviewer.js';
 import sourcesData from './sources.json' with { type: 'json' };
 export { SortOrder } from './base.js';
 
@@ -44,13 +45,10 @@ const FAMILIES = {
   FoolSlideParser,
   LilianaParser,
   MadthemeParser,
-  ScanParser,
   IkenParser,
   MmrcmsParser,
-  CupFoxParser,
   FmreaderParser,
   WeLoveMangaParser,
-  AnimeBootstrapParser,
   GuyaParser,
   MangaWorldParser,
   MangAdventureParser,
@@ -64,6 +62,10 @@ const FAMILIES = {
   SinmhParser,
   MangaBoxParser,
   MangaFireParser,
+  WebtoonParser,
+  LectorMoeParser,
+  GigaViewerParser,
+  ComiciViewerParser,
 };
 
 export function getParser(sourceId, context) {

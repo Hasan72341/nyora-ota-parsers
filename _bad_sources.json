@@ -1,0 +1,14 @@
+[
+  {
+    "id": "CATHALTRADUCCIONES",
+    "status": "DEAD_TIMEOUT",
+    "family": "LectorMoeParser",
+    "domain": "capibaratraductor.com"
+  },
+  {
+    "id": "6IANFRANC9",
+    "status": "DEAD_TIMEOUT",
+    "family": "LectorMoeParser",
+    "domain": "capibaratraductor.com"
+  }
+]
