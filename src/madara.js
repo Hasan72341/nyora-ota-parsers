@@ -110,6 +110,14 @@ export class MadaraParser extends BaseParser {
         return "";
     }
 
+    // Chapter uploadDate must be numeric epoch millis (an ISO string makes the
+    // native iOS/Android/mac decoders throw and drop the whole chapter list).
+    parseDateMs(s) {
+        if (!s) return 0;
+        const t = Date.parse(s);
+        return Number.isFinite(t) ? t : 0;
+    }
+
     async getAsuraDetails(manga) {
         const publicUrl = this.toAbsoluteUrl(manga.url).replace("/series/", "/comics/");
         let html = await this.context.httpGet(publicUrl, this, { "User-Agent": DESKTOP_UA });
@@ -122,43 +130,53 @@ export class MadaraParser extends BaseParser {
         let description = doc.querySelector('meta[name="description"]')?.getAttribute("content") || 
                           doc.querySelector('meta[property="og:description"]')?.getAttribute("content") || "";
         
-        let chapters = Array.from(doc.querySelectorAll('a[href*="/chapter/"]')).map((a, i, all) => {
-            const href = a.getAttribute("href");
-            const relHref = this.toRelativeUrl(href).replace(/\/$/, "");
-            const titleText = a.textContent.trim().replace(/\s+/g, " ");
-            const numMatch = titleText.match(/Chapter\s+([\d.]+)/i);
-            return new MangaChapter({
-                id: relHref,
-                url: relHref,
-                title: titleText,
-                number: numMatch ? parseFloat(numMatch[1]) : (all.length - i),
-                source: this.source
-            });
-        }).filter(c => c.url.includes(key || ""));
+        let chapters = [];
 
-        if (chapters.length === 0 || !description) {
-            try {
-                const apiBase = this.asuraApiBase();
-                const text = await this.context.httpGet(`${apiBase}/api/series/${key}?nyoraTry=${Date.now()}`, this, { "User-Agent": DESKTOP_UA });
-                const res = JSON.parse(text);
-                const series = res.series || res.data?.series || res.data || {};
-                
-                title = series.title || title;
-                description = series.description || description;
-                
-                if (chapters.length === 0) {
-                    const cText = await this.context.httpGet(`${apiBase}/api/series/${key}/chapters?nyoraTry=${Date.now()}`, this, { "User-Agent": DESKTOP_UA });
-                    const cRes = JSON.parse(cText);
-                    const rows = Array.isArray(cRes.data) ? cRes.data : [];
-                    chapters = rows.map(row => new MangaChapter({
-                        id: `${canonical}/chapter/${row.number}`,
-                        url: `${canonical}/chapter/${row.number}`,
-                        title: row.title || `Chapter ${row.number}`,
-                        number: Number(row.number) || 0,
-                        source: this.source
-                    }));
-                }
-            } catch (e) {}
+        // PRIMARY: Asura's JSON API gives a clean number / title / date per
+        // chapter. (The HTML anchors mash the sequential number + label + the
+        // relative date into one string — e.g. "Chapter 316102: Nature Realm
+        // <2>21 hours ago" — which is why the list looked garbled.)
+        try {
+            const apiBase = this.asuraApiBase();
+            const cText = await this.context.httpGet(`${apiBase}/api/series/${key}/chapters?nyoraTry=${Date.now()}`, this, { "User-Agent": DESKTOP_UA });
+            const cRes = JSON.parse(cText);
+            const rows = Array.isArray(cRes.data) ? cRes.data : [];
+            chapters = rows.map((row) => {
+                const label = (row.title != null ? String(row.title) : "").trim();
+                return new MangaChapter({
+                    id: `${canonical}/chapter/${row.number}`,
+                    url: `${canonical}/chapter/${row.number}`,
+                    title: label ? `Chapter ${label}` : `Chapter ${row.number}`,
+                    number: Number(row.number) || 0,
+                    uploadDate: this.parseDateMs(row.published_at || row.created_at),
+                    source: this.source
+                });
+            });
+            if (!description) {
+                try {
+                    const sText = await this.context.httpGet(`${apiBase}/api/series/${key}?nyoraTry=${Date.now()}`, this, { "User-Agent": DESKTOP_UA });
+                    const sRes = JSON.parse(sText);
+                    const series = sRes.series || sRes.data?.series || sRes.data || {};
+                    title = series.title || title;
+                    description = series.description || description;
+                } catch (e) {}
+            }
+        } catch (e) {}
+
+        // FALLBACK: scrape the chapter anchors if the API is unreachable. Take
+        // the number from the URL (clean) — never the mashed anchor text.
+        if (chapters.length === 0) {
+            chapters = Array.from(doc.querySelectorAll('a[href*="/chapter/"]')).map((a, i, all) => {
+                const relHref = this.toRelativeUrl(a.getAttribute("href")).replace(/\/$/, "");
+                const num = (relHref.match(/\/chapter\/([\d.]+)/) || [])[1];
+                return new MangaChapter({
+                    id: relHref,
+                    url: relHref,
+                    title: `Chapter ${num || (all.length - i)}`,
+                    number: num ? parseFloat(num) : (all.length - i),
+                    source: this.source
+                });
+            }).filter(c => c.url.includes(key || ""));
         }
 
         return new Manga({
